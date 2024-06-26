@@ -4,19 +4,29 @@
 {% block page_header %}
     <!-- Carousel Bootstrap-->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  style="height: 500px; margin-top: 10%; background-color:rgb(34, 33, 33);">
+      
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner">
+      <div class="carousel-inner">        
         <div class="carousel-item active">
-          <img src= "{% static 'media/elegance.avif' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin :3% auto;" alt="Test image">
+          <div class="teaser">
+            New Arrivals
+          </div>
+          <img src= "{% static 'media/elegance.avif' %}" class="d-block w-100" alt ="Cover image">
         </div>
         <div class="carousel-item">
+          <div class="teaser">
+            Shoes Passion
+          </div>
           <img src= "{% static 'media/shoes.avif' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin :3% auto;" alt="Test image">
         </div>
         <div class="carousel-item">
+          <div class="teaser">
+            Special Prices
+          </div>
           <img src= "{% static 'media/sale.avif' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin :3% auto;" alt="Test image">
         </div>
       </div>
@@ -31,7 +41,23 @@
     </div> 
     <div id="delivery-banner" class="row text-center">
       <div class="col bg-black text-white">
-          <h4 class="logo-font my-1" style="color:black;">Free delivery on orders over &euro; {{ free_delivery_threshold }}!</h4>                
+          <h4 class="logo-font my-1" style="color:white;">Free delivery on orders over &euro; {{ free_delivery_threshold }}!</h4>                
       </div>            
   </div>
+{% endblock %}
+{% block content %}
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-7 col-md-6 my-auto">
+            <h1 class="display-4 logo-font text-black">
+                The new Arrivals
+            </h1>
+            <div class="my-5">
+                <h4>
+                    <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
