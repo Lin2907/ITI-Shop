@@ -40,6 +40,10 @@ body {
     padding: 10px;
     z-index: 1;
   }
+  .teaser a {
+    color:white;
+    text-decoration: none
+  }
   
   .carousel-item img {
     margin: 3% auto;

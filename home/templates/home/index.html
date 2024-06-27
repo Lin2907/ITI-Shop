@@ -15,19 +15,19 @@
           <div class="teaser">
             New Arrivals
           </div>
-          <img src= "{% static 'media/elegance.avif' %}" class="d-block w-100" alt ="Cover image">
+          <img src= "{% static 'media/elegance.avif' %}" class="d-block w-100" alt ="Fashion image">
         </div>
         <div class="carousel-item">
           <div class="teaser">
-            Shoes Passion
+            <a href="{% url 'products'%}?category=Eyewear,Bags" style="color:white; text-decoration: none;">Accessories</a>
           </div>
-          <img src= "{% static 'media/shoes.avif' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin :3% auto;" alt="Test image">
+          <img src= "{% static 'media/bag-grey.jpg' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin :3% auto;" alt="Accessories">
         </div>
         <div class="carousel-item">
           <div class="teaser">
             Special Prices
           </div>
-          <img src= "{% static 'media/sale.avif' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin :3% auto;" alt="Test image">
+          <img src= "{% static 'media/sale.avif' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin :3% auto;" alt="Sale image">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
