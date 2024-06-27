@@ -120,6 +120,15 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+/* Color options styles */
+.color-swatch {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            border: 1px solid #000;
+        }
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

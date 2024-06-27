@@ -44,6 +44,15 @@
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST"></form>
+                        <div class="col-12">
+                            <p><strong>Colors:</strong></p>
+                            <select class="form-control rounded-0 w-100" name="product_color" id='id_product_color'>
+                                {% for color in product.colors.all %}
+                                <option value="{{ color.code }}"  style="background-color: '{{ color.code }}';">{{ color.name }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </div>                       
                         {% csrf_token %}
                         <div class="form-row">
                             {% with product.has_sizes as s %}
