@@ -69,7 +69,7 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
-# View to list colors
+# View to list product color options
 
 def list_colors(request):
     colors = Color.objects.all()
