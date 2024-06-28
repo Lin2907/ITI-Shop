@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
 from django.contrib import messages
 
-from products.models import Product
+from products.models import Product, Color
 
 # Create your views here.
 
