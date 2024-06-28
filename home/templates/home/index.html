@@ -13,7 +13,7 @@
       <div class="carousel-inner">        
         <div class="carousel-item active">
           <div class="teaser">
-            New Arrivals
+            <a href="{% url 'products'%}?category=New Arrivals" style="color:white; text-decoration: none;">New Arrivals</a>
           </div>
           <img src= "{% static 'media/elegance.avif' %}" class="d-block w-100" alt ="Fashion image">
         </div>
@@ -25,7 +25,7 @@
         </div>
         <div class="carousel-item">
           <div class="teaser">
-            Special Prices
+            <a href="{% url 'products'%}?category=Deals,Clearance" style="color:white; text-decoration: none;">Special Prices</a>
           </div>
           <img src= "{% static 'media/sale.avif' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin :3% auto;" alt="Sale image">
         </div>
@@ -54,7 +54,7 @@
             </h1>
             <div class="my-5">
                 <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                    <a href="{% url 'products'%}?category=New Arrivals" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
                 </h4>
             </div>
         </div>

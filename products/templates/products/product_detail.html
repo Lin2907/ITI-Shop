@@ -48,7 +48,7 @@
                             <p><strong>Colors:</strong></p>
                             <select class="form-control rounded-0 w-100" name="product_color" id='id_product_color'>
                                 {% for color in product.colors.all %}
-                                <option value="{{ color.code }}"  style="background-color: '{{ color.code }}';">{{ color.name }}
+                                <option value="{{ color.code }}"  style="background-color: {{ color.code }};">{{ color.name }}
                                 </option>
                                 {% endfor %}
                             </select>
