@@ -46,11 +46,12 @@
   </div>
 {% endblock %}
 {% block content %}
-<div class="container" style="margin-top: 20px;">
+<div class="container" style="margin-top: 30px; margin-bottom: 30px;">
   <div class="row">
     <div class="col">
       <h4 class="display-4 logo-font text-black">
         New Arrivals
+        <br>
         <p style="font-size: 30%; font-weight: lighter; color: darkslategray; text-transform:initial; line-height: 1.6;">Discover the hottest new arrivals at our online shop for clothes and accessories! 
           From trendy tops and bottoms to stylish bags and eyeware, we have everything you need to elevate your wardrobe. 
           Stay ahead of the fashion game by shopping our latest arrivals now!</p>
@@ -65,5 +66,18 @@
     </div>
   </div>
 </div>
-
+<hr style="border: solid 2px black";>
+<h2 id="heading" class="text-center my-4">Product Picks and Favorites</h2>
+<div id="product-container" class="container">
+  <div class="d-flex flex-wrap justify-content-between">
+    {% for product in randomised %}
+      <div class="card mb-4" style="flex: 0 1 calc(25% - 1rem);">
+        <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+        <div class="card-body text-center">
+          <a href="{% url 'product_detail' product.id %}" class="card-title d-block">{{ product.name }}</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
 {% endblock %}

@@ -50,7 +50,7 @@
                             <label for="id_product_color">Color</label>
                             <select class="form-control rounded-0" name="product_color" id="id_product_color">
                                 {% for color in product.colors.all %}
-                                <option value="{{ color.code }}" style="background-color: {{ color.code }}">{{ color.name }}</option>
+                                <option value="{{ color.code }}" style="background-color: '{{ color.code }}';">{{ color.name }}</option>
                                 {% endfor %}
                             </select>
                         </div>
