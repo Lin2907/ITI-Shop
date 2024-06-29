@@ -46,18 +46,24 @@
   </div>
 {% endblock %}
 {% block content %}
-<div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h4 class="display-4 logo-font text-black">
-                The new Arrivals
-            </h4>
-            <div class="my-5">
-                <h4>
-                    <a href="{% url 'products'%}?category=New Arrivals" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                </h4>
-            </div>
-        </div>
+<div class="container" style="margin-top: 20px;">
+  <div class="row">
+    <div class="col">
+      <h4 class="display-4 logo-font text-black">
+        New Arrivals
+        <p style="font-size: 30%; font-weight: lighter; color: darkslategray; text-transform:initial; line-height: 1.6;">Discover the hottest new arrivals at our online shop for clothes and accessories! 
+          From trendy tops and bottoms to stylish bags and eyeware, we have everything you need to elevate your wardrobe. 
+          Stay ahead of the fashion game by shopping our latest arrivals now!</p>
+        <div class="my-5"></div>
+          <h4>
+              <a href="{% url 'products'%}?category=New Arrivals" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+          </h4>
+    </h4>
+  </div>
+    <div class="col">
+      <img src="{% static 'media/style.jpg'%}" alt="Fashion style complete look">
     </div>
+  </div>
 </div>
+
 {% endblock %}
