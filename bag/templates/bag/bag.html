@@ -43,7 +43,7 @@
                                     <td class="py-3">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                         <p class="my-0"><strong>Size: </strong>{% if item.size %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                                        <p class="my-0"><strong>Color: </strong>{% if item.color %}{{ item.color|upper }}{% else %}N/A{% endif %}</p>
+                                        <p class="my-0"><strong>Color: </strong>{% if item.color %}{{ item.color.name|upper}}{% else %}N/A{% endif %}</p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
@@ -78,27 +78,27 @@
                                                         <input type="hidden" name="product_size" value="{{ item.size }}">
                                                     {% endif %}
                                                     {% if item.color %}
-                                                        <input type="hidden" name="product_color" value="{{ item.color }}">
+                                                        <input type="hidden" name="product_color" value="{{ item.color.id }}">
                                                     {% endif %}
                                                 </div>
                                             </div>
                                         </form>
                                         <a class="update-link text-info"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}" data-product_color="{{ item.color }}"><small>Remove</small></a>
+                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}" data-product_color="{{ item.color.id }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
+                                        <p class="my-0">€{{ item.product.price }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-                                    <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
-                                    <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                                    <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
+                                    <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0 %}
                                         <p class="mb-1 text-danger">
-                                            You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
+                                            You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
                                         </p>
                                     {% endif %}
                                 </td>
@@ -134,7 +134,6 @@
         </div>
     </div>
 {% endblock %}
-
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
@@ -156,7 +155,7 @@
         var data = {
             'csrfmiddlewaretoken': csrfToken, 
             'product_size': size,
-            'product_color': color
+            'product_color': color || '' // Handle optional color
         };
 
         $.post(url, data)

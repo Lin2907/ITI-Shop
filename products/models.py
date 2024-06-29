@@ -19,7 +19,7 @@ class Category(models.Model):
 # Color model with optional hex code for the color option
 
 class Color(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, null=True, blank=True)
     code = models.CharField(max_length=7, null=True, blank=True) 
 
     def __str__(self):
