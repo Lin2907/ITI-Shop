@@ -49,7 +49,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search ITI Shop">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
@@ -85,12 +85,12 @@
                     <li class="list-inline-item">   
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0">
+                                <div><i class="fas fa-shopping-bag fa-lg" style="color:black;"></i></div>
+                                <p class="my-0" style="color:black;">
                                     {% if grand_total %}
-                                        ${{ grand_total|floatformat:2 }}
+                                      €{{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        $0.00
+                                      €0.00
                                     {% endif %}
                                 </p>
                             </div>

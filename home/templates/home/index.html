@@ -41,7 +41,7 @@
     </div> 
     <div id="delivery-banner" class="row text-center">
       <div class="col bg-black text-white">
-          <h4 class="logo-font my-1" style="color:white;">Free delivery on orders over € {{ free_delivery_threshold }}!</h4>                
+          <h4 class="logo-font my-1" style="color:black; background-color: white; border: solid 1px black;">Free delivery on orders over € {{ free_delivery_threshold }}!</h4>                
       </div>            
   </div>
 {% endblock %}
@@ -49,9 +49,9 @@
 <div class="container h-100">
     <div class="row h-100">
         <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font text-black">
+            <h4 class="display-4 logo-font text-black">
                 The new Arrivals
-            </h1>
+            </h4>
             <div class="my-5">
                 <h4>
                     <a href="{% url 'products'%}?category=New Arrivals" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
