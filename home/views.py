@@ -2,10 +2,14 @@ from django.shortcuts import render
 from products.models import Product
 
 def index(request):
-    """A view to return the index page with top-rated products"""
+    """A view to return the index page with random products"""
+    
+    # Fetch all products
+    all_products = Product.objects.all()
 
-    # Fetch top-rated products ordered by rating (highest first)
-    top_rated_products = Product.objects.order_by('-rating')[:4]
+    # Randomize and select 4 products
+    randomised = all_products.order_by("?")[:4]
 
-    # Render the template with top-rated products
-    return render(request, 'home/index.html', {'randomised': top_rated_products})
+    # Render the template with randomized products
+    return render(request, 'home/index.html', {'randomised': randomised})
+
