@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
 from django.contrib import messages
-
 from products.models import Product
 
 # Create your views here.
@@ -25,17 +24,29 @@ def add_to_bag(request, item_id):
     if size and color:
         if color not in bag[item_id]['items_by_size']:
             bag[item_id]['items_by_size'][color] = {}
-        if size not in bag[item_id]['items_by_size'][color]:
-            bag[item_id]['items_by_size'][color][size] = 0
-        bag[item_id]['items_by_size'][color][size] += quantity
+        if size in bag[item_id]['items_by_size'][color]:
+            bag[item_id]['items_by_size'][color][size] += quantity
+        else:
+            bag[item_id]['items_by_size'][color][size] = quantity
     elif size:
-        if size not in bag[item_id]['items_by_size']:
-            bag[item_id]['items_by_size'][size] = 0
-        bag[item_id]['items_by_size'][size] += quantity
+        if 'no_color' not in bag[item_id]['items_by_size']:
+            bag[item_id]['items_by_size']['no_color'] = {}
+        if size in bag[item_id]['items_by_size']['no_color']:
+            bag[item_id]['items_by_size']['no_color'][size] += quantity
+        else:
+            bag[item_id]['items_by_size']['no_color'][size] = quantity
+    elif color:
+        if color not in bag[item_id]['items_by_size']:
+            bag[item_id]['items_by_size'][color] = {'no_size': {}}
+        if 'no_size' in bag[item_id]['items_by_size'][color]:
+            bag[item_id]['items_by_size'][color]['no_size'] += quantity
+        else:
+            bag[item_id]['items_by_size'][color]['no_size'] = quantity
     else:
-        if 'quantity' not in bag[item_id]:
-            bag[item_id]['quantity'] = 0
-        bag[item_id]['quantity'] += quantity
+        if 'no_size' in bag[item_id]['items_by_size']['no_color']:
+            bag[item_id]['items_by_size']['no_color']['no_size'] += quantity
+        else:
+            bag[item_id]['items_by_size']['no_color']['no_size'] = quantity
 
     request.session['bag'] = bag
     return redirect(redirect_url)
@@ -50,26 +61,25 @@ def adjust_bag(request, item_id):
     bag = request.session.get('bag', {})
 
     if size and color:
-        if quantity > 0:
+        if size in bag[item_id]['items_by_size'][color]:
             bag[item_id]['items_by_size'][color][size] = quantity
         else:
-            del bag[item_id]['items_by_size'][color][size]
-            if not bag[item_id]['items_by_size'][color]:
-                del bag[item_id]['items_by_size'][color]
-            if not bag[item_id]['items_by_size']:
-                del bag[item_id]
+            bag[item_id]['items_by_size'][color][size] = quantity
     elif size:
-        if quantity > 0:
-            bag[item_id]['items_by_size'][size] = quantity
+        if size in bag[item_id]['items_by_size']['no_color']:
+            bag[item_id]['items_by_size']['no_color'][size] = quantity
         else:
-            del bag[item_id]['items_by_size'][size]
-            if not bag[item_id]['items_by_size']:
-                del bag[item_id]
+            bag[item_id]['items_by_size']['no_color'][size] = quantity
+    elif color:
+        if color in bag[item_id]['items_by_size']:
+            bag[item_id]['items_by_size'][color]['no_size'] = quantity
+        else:
+            bag[item_id]['items_by_size'][color]['no_size'] = quantity
     else:
-        if quantity > 0:
-            bag[item_id]['quantity'] = quantity
-        else:
-            del bag[item_id]
+        bag[item_id]['items_by_size']['no_color']['no_size'] = quantity
+
+    if bag[item_id]['items_by_size'][color][size] == 0:
+        del bag[item_id]['items_by_size'][color][size]
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
@@ -85,16 +95,12 @@ def remove_from_bag(request, item_id):
 
         if size and color:
             del bag[item_id]['items_by_size'][color][size]
-            if not bag[item_id]['items_by_size'][color]:
-                del bag[item_id]['items_by_size'][color]
-            if not bag[item_id]['items_by_size']:
-                del bag[item_id]
         elif size:
-            del bag[item_id]['items_by_size'][size]
-            if not bag[item_id]['items_by_size']:
-                del bag[item_id]
+            del bag[item_id]['items_by_size']['no_color'][size]
+        elif color:
+            del bag[item_id]['items_by_size'][color]['no_size']
         else:
-            del bag[item_id]
+            del bag[item_id]['items_by_size']['no_color']['no_size']
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
