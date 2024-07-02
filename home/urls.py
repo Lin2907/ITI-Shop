@@ -1,7 +1,8 @@
-from django.contrib import admin
+# home/urls.py
 from django.urls import path
-from . import views
+from .views import index, newsletter_signup
 
 urlpatterns = [
-    path('', views.index, name='home')
+    path('', index, name='index'),
+    path('newsletter_signup/', newsletter_signup, name='newsletter_signup'),
 ]
