@@ -2,8 +2,27 @@
 {% load static %}
 
 {% block page_header %}
+<style>
+.carousel-item {
+  position: relative;
+  text-align: center;
+}
+
+.teaser {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-family: 'Dancing Script';
+}
+</style>
     <!-- Carousel Bootstrap-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  style="height: 500px; margin-top: 10%; background-color:rgb(34, 33, 33);">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  style="height: 500px; margin-top: 15%; background-color:rgb(34, 33, 33);">
       
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -15,7 +34,7 @@
           <div class="teaser">
             <a href="{% url 'products'%}?category=New Arrivals" style="color:white; text-decoration: none;">New Arrivals</a>
           </div>
-          <img src= "{% static 'images/elegance.avif' %}" class="d-block w-100" alt ="Fashion image">
+          <img src= "{% static 'images/elegance.avif' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin:3% auto;"alt ="Fashion image">
         </div>
         <div class="carousel-item">
           <div class="teaser">

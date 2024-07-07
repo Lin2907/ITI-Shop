@@ -33,6 +33,24 @@ body {
     min-width: 260px;
 }
 
+/* Carousel teaser text */
+.carousel-item {
+    position: relative;
+    text-align: center;
+  }
+  
+  .teaser {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+  }
+
 .btn-black {
     background: black;
     color: white;
