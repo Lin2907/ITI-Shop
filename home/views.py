@@ -5,16 +5,6 @@ from .forms import NewsletterSignupForm
 
 def index(request):
     """A view to return the index page with random products"""
-    if request.method == 'POST':
-        form = NewsletterSignupForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'You have successfully signed up for the newsletter.')
-            return redirect('home/index.html')
-        else:
-            messages.error(request, 'There was an error with your signup.')
-    else:
-        form = NewsletterSignupForm()
     
     # Fetch all products
     all_products = Product.objects.all()
@@ -23,7 +13,7 @@ def index(request):
     randomised = all_products.order_by("?")[:4]
 
     # Render the template with randomized products
-    return render(request, 'home/index.html', {'form': form, 'randomised': randomised})
+    return render(request, 'home/index.html', {'randomised': randomised})
 
 def newsletter_signup(request):
     """A view to handle newsletter signups"""
@@ -32,10 +22,11 @@ def newsletter_signup(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'You have successfully signed up for the newsletter.')
-            return redirect('home/newsletter_signup.html')
+            return render(request, 'home/newsletter_signup.html', {'form': form})
         else:
             messages.error(request, 'There was an error with your signup.')
+            return render(request, 'home/index.html')
     else:
         form = NewsletterSignupForm()
     
-    return render(request, 'home/newsletter_signup.html', {'form': form})
+    
