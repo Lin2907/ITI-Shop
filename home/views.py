@@ -24,7 +24,7 @@ def newsletter_signup(request):
             messages.success(request, 'You have successfully signed up for the newsletter.')
             return render(request, 'home/newsletter_signup.html', {'form': form})
         else:
-            messages.error(request, 'There was an error with your signup.')
+            messages.error(request, 'This email address is already registred.')
             return render(request, 'home/index.html')
     else:
         form = NewsletterSignupForm()
