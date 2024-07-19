@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY' , '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['8000-lin2907-itishop-tb5gerxmrdq.ws.codeinstitute-ide.net',
                  'iti-shop-15bc9a913a6f.herokuapp.com']
