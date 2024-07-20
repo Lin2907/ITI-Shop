@@ -22,10 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY' , '')
+#SECRET_KEY = os.environ.get('SECRET_KEY' , '')
+SECRET_KEY = 'django-insecure-z7a$9=zb%_r#@@o&6pt7-h1--bea&_b_8q^wcqnjqs0)664si8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-lin2907-itishop-tb5gerxmrdq.ws.codeinstitute-ide.net',
                  'iti-shop-15bc9a913a6f.herokuapp.com']
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_summernote',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
