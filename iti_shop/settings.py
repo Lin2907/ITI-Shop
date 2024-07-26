@@ -27,14 +27,14 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-lin2907-itishop-tb5gerxmrdq.ws.codeinstitute-ide.net',
                  'iti-shop-15bc9a913a6f.herokuapp.com']
-                
+
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-lin2907-itishop-tb5gerxmrdq.ws.codeinstitute-ide.net',
-    'https://iti-shop-15bc9a913a6f.herokuapp.com/',
+    'https://iti-shop-15bc9a913a6f.herokuapp.com',
 ]
 
 
@@ -232,7 +232,7 @@ else:
     EMAIL_PORT = 587
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 
