@@ -25,11 +25,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ALLOWED_HOSTS = ['8000-lin2907-itishop-tb5gerxmrdq.ws.codeinstitute-ide.net',
                  'iti-shop-15bc9a913a6f.herokuapp.com']
+                
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-lin2907-itishop-tb5gerxmrdq.ws.codeinstitute-ide.net',
+    'https://iti-shop-15bc9a913a6f.herokuapp.com/',
+]
 
 
 # Application definition
@@ -210,7 +216,7 @@ if 'USE_AWS' in os.environ:
 
 #Stripe
 
-FREE_DELIVERY_THRESHOLD = 40
+FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'eur'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
