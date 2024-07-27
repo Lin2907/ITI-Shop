@@ -2,112 +2,97 @@
 {% load static %}
 
 {% block page_header %}
-<style>
-.carousel-item {
-  position: relative;
-  text-align: center;
-}
-
-.teaser {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  font-family: 'Dancing Script';
-}
-</style>
     <!-- Carousel Bootstrap-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  style="height: 500px; margin-top: 15%; background-color:rgb(34, 33, 33);">
+   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  style="height: 500px; margin-top: 15%; background-color:rgb(34, 33, 33);">
       
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">        
-        <div class="carousel-item active">
-          <div class="teaser">
-            <a href="{% url 'products'%}?category=New Arrivals" style="color:white; text-decoration: none;">New Arrivals</a>
-          </div>
-          <img src= "{% static 'images/elegance.avif' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin:3% auto;"alt ="Fashion image">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">        
+      <div class="carousel-item active">
+        <div class="teaser">
+          <a href="{% url 'products'%}?category=New Arrivals" style="color:white; text-decoration: none;">New Arrivals</a>
         </div>
-        <div class="carousel-item">
-          <div class="teaser">
-            <a href="{% url 'products'%}?category=Eyewear,Bags" style="color:white; text-decoration: none;">Accessories</a>
-          </div>
-          <img src= "{% static 'images/bag-grey.jpg' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin :3% auto;" alt="Accessories">
-        </div>
-        <div class="carousel-item">
-          <div class="teaser">
-            <a href="{% url 'products'%}?category=Deals,Clearance" style="color:white; text-decoration: none;">Special Prices</a>
-          </div>
-          <img src= "{% static 'images/sale.avif' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin :3% auto;" alt="Sale image">
-        </div>
+        <img src= "{% static 'images/elegance.avif' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin:3% auto;"alt ="Fashion image">
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div> 
-    <div id="delivery-banner" class="row text-center">
-      <div class="col bg-black text-white">
-          <h4 class="logo-font my-1" style="color:black; background-color: white; border: solid 1px black;">Free delivery on orders over € {{ free_delivery_threshold }}!</h4>                
-      </div>            
-  </div>
+      <div class="carousel-item">
+        <div class="teaser">
+          <a href="{% url 'products'%}?category=Eyewear,Bags" style="color:white; text-decoration: none;">Accessories</a>
+        </div>
+        <img src= "{% static 'images/bag-grey.jpg' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin :3% auto;" alt="Accessories">
+      </div>
+      <div class="carousel-item">
+        <div class="teaser">
+          <a href="{% url 'products'%}?category=Deals,Clearance" style="color:white; text-decoration: none;">Special Prices</a>
+        </div>
+        <img src= "{% static 'images/sale.avif' %}" class="d-block w-100" style = "max-height:400px; max-width:700px; margin :3% auto;" alt="Sale image">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> 
+  <div id="delivery-banner" class="row text-center">
+    <div class="col bg-black text-white">
+        <h4 class="logo-font my-1" style="color:black; background-color: white; border: solid 1px black;">Free delivery on orders over € {{ free_delivery_threshold }}!</h4>                
+    </div>            
+</div>
 {% endblock %}
 {% block content %}
 <div class="container" style="margin-top: 30px; margin-bottom: 30px;">
-  <div class="row">
-    <div class="col" style = "margin-top: 5%;">
-      <h4 class="display-4 logo-font text-black">
-        New Arrivals
-        <br>
-        <p style="font-size: 30%; font-weight: lighter; color: darkslategray; text-transform:initial; line-height: 1.6;">Discover the hottest new arrivals at our online shop for clothes and accessories! 
-          From trendy tops and bottoms to stylish bags and eyeware, we have everything you need to elevate your wardrobe. 
-          Stay ahead of the fashion game by shopping our latest arrivals now!</p>
-        <div class="my-5"></div>
-          <h4>
-              <a href="{% url 'products'%}?category=New Arrivals" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-          </h4>
+<div class="row">
+  <div class="col-12 col-md-6" style="margin-top: 5%;">
+    <h4 class="display-4 logo-font text-black">
+      New Arrivals
+      <br>
+      <p style="font-size: 30%; font-weight: lighter; color: darkslategray; text-transform:initial; line-height: 1.6;">
+        Discover the hottest new arrivals at our online shop for clothes and accessories! 
+        From trendy tops and bottoms to stylish bags and eyewear, we have everything you need to elevate your wardrobe. 
+        Stay ahead of the fashion game by shopping our latest arrivals now!
+      </p>
+      <div class="my-5"></div>
+      <h4>
+        <a href="{% url 'products'%}?category=New Arrivals" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3" style="background-color: black; color:white;">Shop Now</a>
+      </h4>
     </h4>
   </div>
-    <div class="col">
-      <img src="{% static 'images/style.jpg'%}" alt="Fashion style complete look">
-    </div>
+  <div class="col-12 col-md-6">
+    <img src="{% static 'images/style.jpg' %}" alt="Fashion style complete look" class="img-shop">
   </div>
+</div>
 </div>
 <hr style="border: solid 2px black">
 <h2 id="heading" class="text-center my-4">Product Picks</h2>
 <div id="product-container" class="container">
-  <div class="d-flex flex-wrap justify-content-between">
-    {% for product in randomised %}
-      <div class="card mb-4" style="flex: 0 1 calc(25% - 1rem)">
-        <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
-        <div class="card-body text-center">
-          <a href="{% url 'product_detail' product.id %}" class="card-title d-block" style="color: black; text-decoration: none;">{{ product.name }}</a>
-        </div>
+<div class="d-flex flex-wrap justify-content-between">
+  {% for product in randomised %}
+  <div class="col-12 col-md-6 col-lg-3 mb-4">
+    <div class="card h-100">
+      <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+      <div class="card-body text-center">
+        <a href="{% url 'product_detail' product.id %}" class="card-title d-block" style="color: black; text-decoration: none;">{{ product.name }}</a>
       </div>
-    {% endfor %}
+    </div>
   </div>
+  {% endfor %}
+</div>
 </div>
 <hr style="border: solid 2px black">
 <div class="container text-center my-5">
-  <h2>Subscribe to our Newsletter</h2>
-  <form method="post" action="{% url 'newsletter_signup' %}">
-      {% csrf_token %}
-      <div class="form-group">
-          <input type="email" name="email" class="form-control" placeholder="Enter your email" required style="width:500px; margin:auto">
-      </div>
-      <button type="submit" class="btn btn-primary"style="background-color:black; border:transparent;">Subscribe</button>
-  </form>
+<h2>Subscribe to our Newsletter</h2>
+<form method="post" action="{% url 'newsletter_signup' %}">
+    {% csrf_token %}
+    <div class="form-group">
+        <input type="email" name="email" class="form-control" placeholder="Enter your email" required style="width:500px; margin:auto">
+    </div>
+    <button type="submit" class="btn btn-primary" style="background-color:black; border:transparent;">Subscribe</button>
+</form>
 </div>
 {% endblock %}
