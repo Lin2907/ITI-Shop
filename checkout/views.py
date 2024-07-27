@@ -172,8 +172,8 @@ def checkout_success(request, order_number):
 
     # Context for rendering the email templates
     email_context = {
-        'order_number': order_number,
-        'full_name': order.full_name,
+        'order': order,
+        'contact_email': settings.DEFAULT_FROM_EMAIL,
     }
 
     # Render email subject and body from templates
