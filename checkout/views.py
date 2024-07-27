@@ -165,14 +165,19 @@ def checkout_success(request, order_number):
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
-     # Context for rendering the email templates
+
+    messages.success(request, f'Order successfully processed! \
+        Your order number is {order_number}. A confirmation \
+        email will be sent to {order.email}.')
+
+    # Context for rendering the email templates
     email_context = {
         'order_number': order_number,
         'full_name': order.full_name,
     }
 
     # Render email subject and body from templates
-    subject = render_to_string('checkout/confirmation_emails/confirmation_email_subject.txt', email_context).strip()
+    subject = render_to_string('checkout/confirmation_emails/confirmation_email_subject.txt', email_context)
     body = render_to_string('checkout/confirmation_emails/confirmation_email_body.txt', email_context)
 
     # Send confirmation email
@@ -184,11 +189,6 @@ def checkout_success(request, order_number):
         [recipient_email],
         fail_silently=False,
     )
-
-
-    messages.success(request, f'Order successfully processed! \
-        Your order number is {order_number}. A confirmation \
-        email will be sent to {order.email}.')
 
     if 'bag' in request.session:
         del request.session['bag']
