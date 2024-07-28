@@ -3,8 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category, Color
-from .forms import ProductForm
+from .models import Product, Category, Color, Review
+from .forms import ProductForm ,ReviewForm
 
 
 # Create your views here.
@@ -63,10 +63,12 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     colors = product.colors.all() 
+    reviews = Review.objects.filter(product=product)
 
     context = {
         'product': product,
         'colors': colors,
+        "reviews": reviews,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -143,3 +145,28 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+#Review views
+
+def add_review(request, product_id):
+    product = get_object_or_404(Product, id=product_id)
+    
+    if request.method == 'POST':
+        review_form = ReviewForm(request.POST)
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.product = product
+            if request.user.is_authenticated:
+                review.author_name = request.user.username
+                review.author_email = request.user.email
+            else:
+                review.author_name = request.POST.get('author_name', 'Anonymous')
+                review.author_email = request.POST.get('author_email')
+            review.save()
+            messages.success(request, 'Review added successfully.')
+            return redirect('product_detail', product_id=product_id)
+        else:
+            messages.error(request, 'Error adding your review. Please ensure the form is filled out correctly.')
+    
+    return render(request, 'products/add_review.html', {'product': product, 'form': ReviewForm()})
+

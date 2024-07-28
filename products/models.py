@@ -40,3 +40,16 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+class Review(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
+    author_name = models.CharField(max_length=255, blank=True, null=True)
+    author_email = models.EmailField(blank=True, null=True)
+    content = models.TextField()
+    approved = models.BooleanField(default=False)
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        if self.author_name:
+            return f'Review by {self.author_name} on {self.product.name}'
+        return f'Anonymous review on {self.product.name}'

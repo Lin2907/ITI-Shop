@@ -110,6 +110,43 @@
             </div>
         </div>
     </div>
+    <!-- Product Reviews Section -->
+    <hr class="border-2 mt-5">
+            <div class="row">
+                {% if reviews %}
+                <div class="col-12 col-lg-7">
+                    <div class="p-2">
+                        <ul class="list-group">
+                            {% for review in reviews %}
+                            <li class="list-group-item review card border-dark" style="max-width: 40rem;">
+                                <h6 class="content-font card-header border-dark"><strong>Reviewed by:
+                                    </strong>{{ review.author_name }}</h6>
+                                <p class="content-font card-body text-dark">{{ review.content }}</p>
+                                <hr class="border-0">
+                                <p class="content-font card-body text-dark">Submitted on: {{ review.created_on }}</p>
+                            </li>
+                            <hr class="border-0">
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Review Section -->
+    <div class="row mt-5">
+        <div class="col-12 col-md-8 offset-md-2">
+            <h3>Add a Review</h3>
+            <form method="post" action="{% url 'add_review' product.id %}">
+                {% csrf_token %}
+                {{ review_form|crispy }}
+                <button type="submit" class="btn btn-primary">Add Review</button>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
 {% block postloadjs %}

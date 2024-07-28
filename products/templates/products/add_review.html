@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <hr>
+            <h5 class="text-muted content-font">Product Review for {{ product.name }}</h5>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <form method="POST" action="{% url 'add_review' product.id %}" class="form mb-2 content-font"
+                enctype="multipart/form-data" aria-label="Submit a product review">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="text-right">
+                    <a class="btn btn-dark rounded content-font mt-2"
+                        href="{% url 'product_detail' product.id %}">Cancel</a>
+                    <button class="btn btn-dark rounded content-font mt-2" type="submit">Submit Review</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
