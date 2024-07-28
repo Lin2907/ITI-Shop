@@ -113,6 +113,7 @@
     <!-- Product Reviews Section -->
     <hr class="border-2 mt-5">
             <div class="row">
+                {% if reviews %}
                 <div class="col-12 col-lg-7">
                     <div class="p-2">
                         <ul class="list-group">
@@ -128,9 +129,11 @@
                             {% endfor %}
                         </ul>
                     </div>
+                    {% else %}
             <div class="col-12 col-lg-7">
         <h6 style = "padding-left:10%;">No reviews yet. Be the first to review this product!</h6>
     </div>
+    {% endif %}
                 </div>
             </div>
         </div>
