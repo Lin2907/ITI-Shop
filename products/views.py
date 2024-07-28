@@ -164,7 +164,7 @@ def add_review(request, product_id):
                 review.author_email = request.POST.get('author_email')
             review.save()
             messages.success(request, 'Review added successfully.')
-            return redirect('product_detail', product_id=product_id)
+            return redirect('products/product_detail', product_id=product_id)
         else:
             messages.error(request, 'Error adding your review. Please ensure the form is filled out correctly.')
     
