@@ -4,12 +4,56 @@
 
 {% block content %}
 <div class="jumbotron" style="margin-top :20%;">
-    <h1 class="display-4">Thank you for subscribing to our Newsletter</h1>
-    <p class="lead">You will receive a confirmation Email shortly .</p>
+    <h3 style="text-align: center;">Thank you for subscribing to our Newsletter</h3>
     <hr class="my-4">
-    <p>Stay updated with our latest news and special offers!</p>
-    <a href="{% url 'products' %}" class="btn btn-dark rounded my-2">
-        <span class="text-uppercase content-font">Keep Shopping</span>
+    <a href="{% url 'products' %}" class="btn btn-dark rounded my-2" style="margin:auto;">
+        <span class="text-uppercase content-font">Back to Shopping</span>
     </a>
   </div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="display-4">Stay Updated with Our Latest News!</h1>
+            <p class="lead"> Never miss out on our exclusive offers, latest arrivals, and fashion tips.</p>
+        </div>
+    </div>
+
+    <div class="row text-center mt-5">
+        <div class="col-md-4">
+            <i class="fas fa-tag fa-3x"></i>
+            <h4>Exclusive Discounts</h4>
+            <p>Get access to special deals and discounts available only to our subscribers.</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fas fa-bell fa-3x"></i>
+            <h4>Early Access</h4>
+            <p>Be the first to know about our new arrivals and sales.</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fas fa-tshirt fa-3x"></i>
+            <h4>Fashion Tips</h4>
+            <p>Receive styling advice and fashion tips from our experts.</p>
+        </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col text-center">
+          <h2>What Our Subscribers Are Saying</h2>
+          <blockquote class="blockquote">
+              <p class="mb-0">"I love getting early access to sales and the exclusive discounts are amazing!"</p>
+              <footer class="blockquote-footer">Jane Doe</footer>
+          </blockquote>
+          <blockquote class="blockquote">
+              <p class="mb-0">"The fashion tips are always on point and have helped me style my outfits better."</p>
+              <footer class="blockquote-footer">John Smith</footer>
+          </blockquote>
+      </div>
+  </div>
+
+  <div class="row mt-5 mb-5">
+      <div class="col text-center">
+          <h3>Don't Miss Out!</h3>
+          <p>We respect your privacy and promise not to spam you.</p>
+      </div>
+  </div>
+</div>
 {% endblock %}
