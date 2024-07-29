@@ -118,12 +118,12 @@
                     <div class="p-2">
                         <ul class="list-group">
                             {% for review in reviews %}
-                            <li class="list-group-item review card border-dark" style="max-width: 40rem;">
-                                <h6 class="content-font card-header border-dark"><strong>Reviewed by:
+                            <li class="list-group-item card border-dark" style="max-width: 80rem;">
+                                <h6 class="content-font card-header border-dark" style ="background-color: black; color:white;"><strong>Review written by:
                                     </strong>{{ review.author_name }}</h6>
                                 <p class="content-font card-body text-dark">{{ review.content }}</p>
                                 <hr class="border-0">
-                                <p class="content-font card-body text-dark">Submitted on: {{ review.created_on }}</p>
+                                <p class="content-font card-body text-dark">Posted on: {{ review.created_on }}</p>
                             </li>
                             <hr class="border-0">
                             {% endfor %}
@@ -142,11 +142,10 @@
     <!-- Add Review Section -->
     <div class="row mt-5">
         <div class="col-12 col-md-8 offset-md-2">
-            <h3>Add a Review</h3>
             <form method="post" action="{% url 'add_review' product.id %}">
                 {% csrf_token %}
                 {{ review_form|crispy }}
-                <button type="submit" class="btn btn-primary">Add Review</button>
+                <button type="submit" class="btn btn-primary" style="background-color: black;">Add a Review</button>
             </form>
         </div>
     </div>
