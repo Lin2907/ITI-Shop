@@ -112,7 +112,10 @@
     </div>
     <!-- Product Reviews Section -->
     <hr class="border-2 mt-5">
-            <div class="row">
+            <div class="row" style="display: flex;
+            justify-content: center;
+            align-items: center; 
+            flex-direction: column;">
                 {% if reviews %}
                 <div class="col-12 col-lg-7">
                     <div class="p-2">
@@ -141,11 +144,12 @@
 
     <!-- Add Review Section -->
     <div class="row mt-5">
-        <div class="col-12 col-md-8 offset-md-2">
+        <div class="col-12 col-md-8 offset-md-2" style="display: flex;
+        flex-direction: column; align-items: center;">
             <form method="post" action="{% url 'add_review' product.id %}">
                 {% csrf_token %}
                 {{ review_form|crispy }}
-                <button type="submit" class="btn btn-primary" style="background-color: black;">Add a Review</button>
+                <button type="submit" class="btn btn-primary" style="background-color: black; align-self: center;">Add a Review</button>
             </form>
         </div>
     </div>
