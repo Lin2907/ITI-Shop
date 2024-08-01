@@ -1,0 +1,9 @@
+Dear {{ contact_us.name }},
+
+Thank you for reaching out to us. We have received your message and will get back to you shortly.
+
+Your message:
+{{ contact_us.message }}
+
+Best regards,
+ITI Shop

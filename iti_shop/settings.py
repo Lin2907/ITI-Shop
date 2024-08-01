@@ -23,8 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-#SECRET_KEY = os.environ.get('SECRET_KEY', '')
-SECRET_KEY = 'django-insecure-z7a$9=zb%_r#@@o&6pt7-h1--bea&_b_8q^wcqnjqs0)664si8'
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -56,6 +55,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'contact_us',
 
      # Other
     'crispy_forms',
