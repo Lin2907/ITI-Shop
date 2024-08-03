@@ -125,6 +125,15 @@
                                 <h6 class="content-font card-header border-dark" style ="background-color: black; color:white;"><strong>Review written by:
                                     </strong>{{ review.author_name }}</h6>
                                 <p class="content-font card-body text-dark">{{ review.content }}</p>
+                                <p class="content-font card-body text-dark">
+                                    Rating: 
+                                    {% for i in "12345" %}
+                                        <span>{% if forloop.counter <= review.rating %}&#9733;{% else %}&#9734;{% endif %}</span>
+                                    {% endfor %}
+                                </p>
+                                <hr class="border-0">
+                                <p class="content-font card-body text-dark">Posted on: {{ review.created_on }}</p>
+                            </li>
                                 <hr class="border-0">
                                 <p class="content-font card-body text-dark">Posted on: {{ review.created_on }}</p>
                             </li>

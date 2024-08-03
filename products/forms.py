@@ -1,6 +1,6 @@
 from django import forms
 from .widgets import CustomClearableFileInput
-from .models import Product, Category,Review
+from .models import Product,Category,Review
 
 
 class ProductForm(forms.ModelForm):
@@ -23,6 +23,9 @@ class ProductForm(forms.ModelForm):
 
 class ReviewForm(forms.ModelForm):
 
-    class Meta:
+     class Meta:
         model = Review
-        fields = ['author_name', 'author_email', 'content']
+        fields = ['author_name', 'author_email', 'content', 'rating']
+        widgets = {
+            'rating': forms.RadioSelect(choices=[(i, str(i)) for i in range(1, 6)])
+        }

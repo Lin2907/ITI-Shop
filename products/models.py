@@ -46,6 +46,7 @@ class Review(models.Model):
     author_name = models.CharField(max_length=255, blank=True, null=True)
     author_email = models.EmailField(blank=True, null=True)
     content = models.TextField()
+    rating = models.IntegerField(choices=[(i, i) for i in range(1, 6)], default=0)
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
 
