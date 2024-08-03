@@ -3,7 +3,7 @@
 
 
 {% block content %}
-<div class="jumbotron" style="margin-top :20%;">
+<div class="jumbotron" style="margin-top :20%; border: 2px solid black;">
     <h3 style="text-align: center;">Thank you for subscribing to our Newsletter</h3>
     <hr class="my-4">
     <a href="{% url 'products' %}" class="btn btn-dark rounded my-2" style="margin:auto;">
@@ -35,19 +35,21 @@
             <p>Receive styling advice and fashion tips from our experts.</p>
         </div>
     </div>
-    <div class="row mt-5">
-      <div class="col text-center">
-          <h2>What Our Subscribers Are Saying</h2>
-          <blockquote class="blockquote">
-              <p class="mb-0">"I love getting early access to sales and the exclusive discounts are amazing!"</p>
-              <footer class="blockquote-footer">Jane Doe</footer>
-          </blockquote>
-          <blockquote class="blockquote">
-              <p class="mb-0">"The fashion tips are always on point and have helped me style my outfits better."</p>
-              <footer class="blockquote-footer">John Smith</footer>
-          </blockquote>
-      </div>
-  </div>
+    <div class="row align-items-center mt-4">
+        <div class="col-md-4 col-12 text-center mb-3 mb-md-0">
+            <img src="{% static 'images/thank-you.jpg' %}" alt="Thank you for shopping with us" class="img-fluid">
+        </div>
+        <div class="col-md-8 col-12">
+            <blockquote class="blockquote text-md-left text-center">
+                <p class="mb-0">"I love getting early access to sales and the exclusive discounts are amazing!"</p>
+                <footer class="blockquote-footer">Jane Doe</footer>
+            </blockquote>
+            <blockquote class="blockquote text-md-left text-center">
+                <p class="mb-0">"The fashion tips are always on point and have helped me style my outfits better."</p>
+                <footer class="blockquote-footer">John Smith</footer>
+            </blockquote>
+        </div>
+    </div>
 
   <div class="row mt-5 mb-5">
       <div class="col text-center">
