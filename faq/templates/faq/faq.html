@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 style="margin-top: 25%;">Frequently Asked Questions</h2>
+    <div class="accordion" id="accordionExample">
+        <!-- FAQ 1 -->
+        <div class="card" style="margin-top: 5%;">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style = "color:black;">
+                        What is your return policy?
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample" style = "color:black;">
+                <div class="card-body">
+                    We offer a 30-day return policy on all our items. Please ensure the items are in their original condition and packaging. Refunds will be processed within 5-7 business days after we receive the returned items.
+                </div>
+            </div>
+        </div>
+        <!-- FAQ 2 -->
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style = "color:black;">
+                        What should I do if I receive a damaged item?
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    If you receive a damaged item, please contact our customer service team within 48 hours of receiving your order. Provide your order number, a description of the damage, and any relevant photos. We will arrange for a replacement or refund as quickly as possible.
+                </div>
+            </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style = "color:black;">
+                        How do you handle user security and data privacy?
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    We take your privacy seriously and adhere to the highest standards to protect your personal information. All transactions are encrypted, and we do not share your data with third parties without your consent.
+                </div>
+            </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style = "color:black;">
+                        How can I track my order?
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                    Once your order has been shipped, you will receive an email with a tracking number and a link to track your order.
+            </div>
+        </div>
+        <!-- FAQ 5 -->
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style = "color:black;">
+                        Can I change or cancel my order?
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                    Orders can be changed or cancelled within 1 hour of placing the order. Please contact our customer service team as soon as possible with your order number and requested changes.
+                </div>
+            </div>
+        </div>
+        <!-- FAQ 6 -->
+        <div class="card">
+            <div class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style = "color:black;">
+                        Do you offer international shipping?
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div class="card-body">
+                    Yes, we offer international shipping to most countries. Shipping costs and delivery times will vary depending on your location.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
