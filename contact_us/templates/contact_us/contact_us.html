@@ -1,6 +1,26 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<style>
+    .form-container {
+        background-image: url('{% static "images/your-background-image.jpg" %}'); /* Change the path to your image */
+        background-size: cover;
+        background-position: center;
+        padding: 50px;
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+    .form-content {
+        background-color: rgba(255, 255, 255, 0.8); /* White background with 0.8 opacity */
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: auto;
+    }
+</style>
+{% endblock %}
+
 
 {% block content %}
 <div class="container mt-5" style="margin-top:20% !important;">
