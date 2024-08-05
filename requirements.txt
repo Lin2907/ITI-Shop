@@ -8,6 +8,7 @@ django-countries==7.2.1
 django-crispy-forms==1.14.0
 django-storages==1.14.4
 django-summernote==0.8.20.0
+django-taggit==6.0.0
 gunicorn==22.0.0
 jmespath==1.0.1
 pillow==10.3.0

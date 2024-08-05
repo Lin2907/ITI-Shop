@@ -1,4 +1,5 @@
 from django.db import models
+from taggit.managers import TaggableManager
 
 # Create your models here.
 
@@ -16,16 +17,6 @@ class Category(models.Model):
     def get_friendly_name(self):
         return self.friendly_name
 
-# Color model with optional hex code for the color option
-
-class Color(models.Model):
-    name = models.CharField(max_length=50, null=True, blank=True)
-    code = models.CharField(max_length=7, null=True, blank=True) 
-
-    def __str__(self):
-        return self.name
-
-
 class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
@@ -36,7 +27,8 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    colors = models.ManyToManyField(Color, related_name='products', blank=True)
+    materials = models.TextField(null=True, blank=True)
+    tags = TaggableManager()
 
     def __str__(self):
         return self.name

@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category, Color, Review
+from .models import Product, Category, Review
 from .forms import ProductForm ,ReviewForm
 
 
@@ -62,23 +62,17 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-    colors = product.colors.all() 
     reviews = Review.objects.filter(product=product)
+    similar_products = Product.objects.filter(tags__in=product.tags.all()).exclude(id=product.id).distinct()[:3]
 
     context = {
         'product': product,
-        'colors': colors,
         'reviews': reviews,
+        'similar_products': similar_products,
     }
 
     return render(request, 'products/product_detail.html', context)
 
-# View to list product color options
-
-def list_colors(request):
-    colors = Color.objects.all()
-    
-    return render(request, 'product_detail.html', {'colors': colors})
 
 @login_required
 def add_product(request):
