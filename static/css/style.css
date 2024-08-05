@@ -5,6 +5,7 @@ html {
 body {
     color: #555;
     font-family: 'Lato';
+    overflow-x: hidden;
 }
 
 /* from Bulma */
@@ -385,7 +386,7 @@ input[name='q']::placeholder {
 
       .img-shop {
         padding-top: 20px;
-        width: 100%;
+        width: 80%;
         height: auto;
       }
 
