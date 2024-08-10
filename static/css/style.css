@@ -211,12 +211,13 @@ input[name='q']::placeholder {
 /* Contact us */
 
 .form-container {
-    background-image: url('{% static "images/background.jpeg" %}');
+    /* background-image: url('{% static "images/background.jpeg" %}');*/
+    background-color: #000;
     background-size: cover;
     background-position: center;
     padding: 50px;
     border-radius: 10px;
-    opacity: 0.9;
+    /*opacity: 0.9;*/
 }
 .form-content {
     background-color: rgba(255, 255, 255, 0.8);

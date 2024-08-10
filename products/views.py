@@ -64,8 +64,9 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product)
-    similar_products = Product.objects.filter(tags__in=product.tags.all()).exclude(id=product.id).distinct()[:3]
-    user_wishlist = None  # Default to None for unauthenticated users
+    similar_products = Product.objects.filter(tags__in=product.tags.all()).exclude(id=product.id).distinct()[:3] 
+    # Default to None for unauthenticated users
+    user_wishlist = None
     
     if request.user.is_authenticated:
         user_wishlist = Wishlist.objects.filter(user=request.user, products=product).exists()
@@ -147,7 +148,7 @@ def delete_product(request, product_id):
     return redirect(reverse('products'))
 
 #Review views
-
+    
 def add_review(request, product_id):
     product = get_object_or_404(Product, id=product_id)
     
@@ -156,19 +157,22 @@ def add_review(request, product_id):
         if review_form.is_valid():
             review = review_form.save(commit=False)
             review.product = product
+            
             if request.user.is_authenticated:
                 review.author_name = request.user.username
                 review.author_email = request.user.email
             else:
                 review.author_name = request.POST.get('author_name', 'Anonymous')
-                review.author_email = request.POST.get('author_email')
+                review.author_email = request.POST.get('author_email', None)  # Set to None if not provided
+            
             review.save()
             messages.success(request, 'Review added successfully.')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Error adding your review. Please ensure the form is filled out correctly.')
-    
+            messages.error(request, 'Error adding your review. Please ensure all fields are filled out correctly.')
+        
     return render(request, 'products/add_review.html', {'product': product, 'form': ReviewForm()})
+
 
     # A view for toggeling the wishlist
 

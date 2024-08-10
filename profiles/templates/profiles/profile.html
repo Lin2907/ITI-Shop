@@ -75,11 +75,11 @@
         </div>
         </div>
         <!--Wishlist section-->
-        <h2>Your Wishlist</h2>
+        <h4 style ="text-align: center; margin-top: 10% ;">Your Wishlist</h4>
 {% if wishlist.products.all %}
     <div class="row">
         {% for product in wishlist.products.all %}
-        <div class="col-md-3">
+        <div class="col-md-3" style="margin:10px;">
             <div class="card">
                 <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
                 <div class="card-body">
@@ -93,8 +93,12 @@
         {% endfor %}
     </div>
 {% else %}
-    <p>Your wishlist is empty.</p>
-{% endif %}
+<div style="text-align: center;">
+    <hr style= "border: 1px solid grey ; margin: 10px 0">
+    <h7>Your wishlist is empty</h7>
+    <hr style= "border: 1px solid grey ; margin: 10px 0">
+</div>
+{%endif%}
 {% endblock %}
 
 {% block postloadjs %}
