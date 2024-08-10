@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category, Review
+from wishlist.models import Wishlist
 from .forms import ProductForm ,ReviewForm
 
 
@@ -64,10 +65,15 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product)
     similar_products = Product.objects.filter(tags__in=product.tags.all()).exclude(id=product.id).distinct()[:3]
+    user_wishlist = None  # Default to None for unauthenticated users
+    
+    if request.user.is_authenticated:
+        user_wishlist = Wishlist.objects.filter(user=request.user, products=product).exists()
 
     context = {
         'product': product,
         'reviews': reviews,
+        'user_wishlist': user_wishlist,
         'similar_products': similar_products,
     }
 
@@ -164,3 +170,17 @@ def add_review(request, product_id):
     
     return render(request, 'products/add_review.html', {'product': product, 'form': ReviewForm()})
 
+    # A view for toggeling the wishlist
+
+@login_required
+def toggle_wishlist(request, product_id):
+    product = get_object_or_404(Product, id=product_id)
+    wishlist, created = Wishlist.objects.get_or_create(user=request.user)
+
+    if product in wishlist.products.all():
+        # Product is already in wishlist; no need to add it again.
+        return redirect('product_detail', product_id=product.id)
+    else:
+        wishlist.products.add(product)
+
+    return redirect('product_detail', product_id=product.id)

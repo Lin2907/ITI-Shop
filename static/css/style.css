@@ -191,6 +191,23 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/* Wishlist */
+.wishlist-toggle {
+    color: #e74c3c; /* Red color for the heart */
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.wishlist-toggle:hover {
+    color: #c0392b; /* Darker red on hover */
+}
+
+.wishlist-toggle.active {
+    color: #c0392b; /* Filled heart color when active */
+}
+
+
 /* Contact us */
 
 .form-container {
