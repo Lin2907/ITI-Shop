@@ -170,8 +170,9 @@ def add_review(request, product_id):
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, 'Error adding your review. Please ensure all fields are filled out correctly.')
-        
-    return render(request, 'products/add_review.html', {'product': product, 'form': ReviewForm()})
+
+    return render(request, 'products/add_review.html', {'product': product, 'form': review_form})
+
 
 
     # A view for toggeling the wishlist

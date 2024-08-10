@@ -1,14 +1,9 @@
 <div class="collapse navbar-collapse" id="main-nav" style="border-top: solid 2px black; padding:10px;">
     <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="contact-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'index' %}">
                 Home
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="contact-link">
-                <a href="{% url 'index' %}" class="dropdown-item">Home</a>
-                <a href="{% url 'contact_us' %}" class="dropdown-item">Contact Us</a>
-                <a href="{% url 'faq'%}" class="dropdown-item">FAQ</a>
-            </div>
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -45,7 +40,7 @@
             </div>
         </li>
 
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown mr-4">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Specials
             </a>
@@ -53,6 +48,15 @@
                 <a href="{% url 'products'%}?category=Deals" class="dropdown-item">Deals</a>
                 <a href="{% url 'products'%}?category=Clearance" class="dropdown-item">Clearance</a>
                 <a href="{% url 'products'%}?category=Deals,Clearance" class="dropdown-item">All Specials</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="contact-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contact Us
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="contact-link">
+                <a href="{% url 'contact_us' %}" class="dropdown-item">Contact Us</a>
+                <a href="{% url 'faq'%}" class="dropdown-item">FAQ</a>
             </div>
         </li>
     </ul>
