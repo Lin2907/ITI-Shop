@@ -76,12 +76,8 @@
     </button>
     <div class="collapse mt-2" id="materialsCollapse">
         <div class="card card-body">
-            {% if product.materials.exists %}
-                <ul>
-                    {% for material in product.materials.all %}
-                        <li>{{ material.name }}</li>
-                    {% endfor %}
-                </ul>
+            {% if product.materials %}
+                <p>{{ product.materials }}</p>
             {% else %}
                 <p>Material information not available.</p>
             {% endif %}
@@ -148,7 +144,7 @@
                 <div class="row justify-content-center">
                     {% for similar_product in similar_products %}
                         <div class="{% if similar_products|length == 1 %}col-md-6 col-lg-4{% else %}col-md-4{% endif %} d-flex justify-content-center mb-4">
-                            <div class="card" style="width: 100%;">
+                            <div class="card" style="width: 100%; margin :10px;">
                                 <img src="{{ similar_product.image.url }}" class="card-img-top" alt="{{ similar_product.name }}">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">{{ similar_product.name }}</h5>
