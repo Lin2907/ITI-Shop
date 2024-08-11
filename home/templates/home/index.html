@@ -3,7 +3,7 @@
 
 {% block page_header %}
     <!-- Carousel Bootstrap-->
-   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  style="height: 500px; margin-top: 15%; background-color:rgb(34, 33, 33);">
+   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  style="height: 500px; margin-top: 15%; background-color:rgb(34, 33, 33); overflow-x: hidden;">
       
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -39,7 +39,7 @@
       <span class="sr-only">Next</span>
     </a>
   </div> 
-  <div id="delivery-banner" class="row text-center">
+  <div id="delivery-banner" class="row text-center" style="overflow-x: hidden;">
     <div class="col bg-black text-white">
         <h4 class="logo-font my-1" style="color:black; background-color: white; border-bottom: solid 1px black;">Free delivery on orders over € {{ free_delivery_threshold }}!</h4>                
     </div>            

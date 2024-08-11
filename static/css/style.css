@@ -346,9 +346,6 @@ input[name='q']::placeholder {
         padding-top: 116px;
     }
 
-   /* body {
-        height: calc(100vh - 116px); 
-    } */
     .display-4.logo-font.text-black {
         font-size: 2rem;
     }
@@ -396,7 +393,7 @@ input[name='q']::placeholder {
     .form-content {
         margin-left: 0; 
         padding: 20px; 
-        max-width: 90%;
+        width: 90%;
     }
 
     /* Carousel and product cards */
@@ -436,9 +433,6 @@ input[name='q']::placeholder {
 
       .text-black {
         text-align: center;
-      }
-      .shop-now-button {
-         margin-left: 40px;
       }
 
      
