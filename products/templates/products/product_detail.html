@@ -139,28 +139,30 @@
 </div>
 </div>
 </div>
-<!--Similar products section-->
+<!-- Similar products section -->
 <div class="row">
-<div class="col-md-12">
-{% if similar_products %}
-<h4 style="text-align: center;">Similar Products</h4>
-<div class="d-flex justify-content-center">
-<div class="row">
-{% for similar_product in similar_products %}
-<div class="col-md-4 d-flex justify-content-center mb-4">
-    <div class="card">
-        <img src="{{ similar_product.image.url }}" class="card-img-top" alt="{{ similar_product.name }}">
-        <div class="card-body">
-            <h5 class="card-title">{{ similar_product.name }}</h5>
-            <p class="card-text">€{{ similar_product.price }}</p>
-            <a href="{% url 'product_detail' similar_product.id %}" class="btn btn-primary" style="background-color:black; border: black;">View Product</a>
-        </div>
+    <div class="col-md-12">
+        {% if similar_products %}
+            <h4 style="text-align: center;">Similar Products</h4>
+            <div class="d-flex justify-content-center">
+                <div class="row justify-content-center">
+                    {% for similar_product in similar_products %}
+                        <div class="{% if similar_products|length == 1 %}col-md-6 col-lg-4{% else %}col-md-4{% endif %} d-flex justify-content-center mb-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="{{ similar_product.image.url }}" class="card-img-top" alt="{{ similar_product.name }}">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">{{ similar_product.name }}</h5>
+                                    <p class="card-text">€{{ similar_product.price }}</p>
+                                    <a href="{% url 'product_detail' similar_product.id %}" class="btn btn-primary" style="background-color:black; border: black;">View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
     </div>
 </div>
-{% endfor %}
-</div>
-</div>
-{% endif %}
 <!-- Product Reviews Section -->
 <hr class="border-2 mt-5">
 <div class="row" style="display: flex;
