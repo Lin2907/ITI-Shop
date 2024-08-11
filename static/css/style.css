@@ -216,14 +216,13 @@ input[name='q']::placeholder {
 /* Contact us */
 
 .form-container {
-    /* background-image: url('{% static "images/background.jpeg" %}');*/
-    width:90%;
-    background-color: #000;
+    background-image: url('{% static "images/background-contact.jpg" %}');
+    width:100%;
     background-size: cover;
     background-position: center;
     padding: 50px;
     border-radius: 10px;
-    /*opacity: 0.9;*/
+    opacity: 0.9;
 }
 .form-content {
     background-color: rgba(255, 255, 255, 0.8);

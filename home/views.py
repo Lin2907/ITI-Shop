@@ -30,3 +30,11 @@ def newsletter_signup(request):
         form = NewsletterSignupForm()
     
     
+    # 404 and 500 error views
+
+def custom_404(request, exception):
+    return render(request, 'home/404.html', status=404)
+
+
+def custom_500(request):
+    return render(request, 'home/500.html', status=500)
