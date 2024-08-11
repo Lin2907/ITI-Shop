@@ -168,10 +168,10 @@ def add_review(request, product_id):
             review.save()
             messages.success(request, 'Review added successfully.')
             return redirect(reverse('product_detail', args=[product.id]))
-        else:
-            messages.error(request, 'Error adding your review. Please ensure all fields are filled out correctly.')
+    else:
+        messages.error(request, 'Error adding your review. Please ensure all fields are filled out correctly.')
 
-    return render(request, 'products/add_review.html', {'product': product, 'form': review_form})
+    return render(request, 'products/add_review.html', {'product': product, 'form':ReviewForm()})
 
 
 
