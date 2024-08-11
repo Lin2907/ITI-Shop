@@ -1,9 +1,28 @@
 {% extends "base.html" %}
 {% load static %}
 
+<style>
+    .form-container {
+    background-image: url('{% static "images/background-contact.jpg" %}');
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+.form-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: auto;
+}
+</style>
+
 {% block content %}
 <div class="container" style="margin-top: 20% !important;">
-    <p class="text-center h6 h5-sm mb-2>If you have any questions, please check our <a href="{% url 'faq' %}"><strong><em style="color:black">FAQ page</strong></em></a> for quick answers to common inquiries.</p>
+    <p class="text-center h6 h5-sm mb-2">If you have any questions, please check our <a href="{% url 'faq' %}"><strong><em style="color:black">FAQ page</strong></em></a> for quick answers to common inquiries.</p>
     <p class="text-center h6 h5-sm">If you still need assistance, feel free to submit your inquiry below.</p>
 
     <br>
