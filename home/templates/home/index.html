@@ -39,11 +39,14 @@
       <span class="sr-only">Next</span>
     </a>
   </div> 
-  <div id="delivery-banner" class="row text-center" style="overflow-x: hidden;">
-    <div class="col bg-black text-white">
-        <h4 class="logo-font my-1" style="color:black; background-color: white; border-bottom: solid 1px black;">Free delivery on orders over € {{ free_delivery_threshold }}!</h4>                
-    </div>            
+  <div id="delivery-banner" class="row text-center" style="overflow-x: hidden; width: 100vw; margin: 0; padding: 0;">
+  <div class="col bg-black text-white" style="padding: 0;">
+      <h4 class="logo-font my-1" style="color: black; background-color: white; border-bottom: solid 1px black; margin: 0;">
+          Free delivery on orders over € {{ free_delivery_threshold }}!
+      </h4>                
+  </div>            
 </div>
+
 {% endblock %}
 {% block content %}
 <div class="container" style="margin-top: 30px; margin-bottom: 30px; overflow-x: hidden;">

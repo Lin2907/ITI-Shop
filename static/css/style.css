@@ -219,7 +219,7 @@ input[name='q']::placeholder {
 /* Contact us */
 
 .form-container {
-    background-image: url('{% static "images/background-contact.jpg" %}');
+    background-image: url('/static/images/background-contact.jpg');
     width:100%;
     background-size: cover;
     background-position: center;
@@ -229,11 +229,11 @@ input[name='q']::placeholder {
 }
 .form-content {
     background-color: rgba(255, 255, 255, 0.8);
-        padding: 30px;
-        border-radius: 10px;
-        max-width: 700px;
-        margin: auto;
-        margin-left: 40%;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0;
 }
 
 /* -------------------------------- Media Queries */
@@ -392,6 +392,18 @@ input[name='q']::placeholder {
     .form-container {
         padding: 30px;
     }
+
+ /* Randomized products home page styles */ 
+
+    .card-text {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    
+    .card-body small.text-muted {
+        font-size: 1rem;
+    }
+
 
     .form-content {
         margin-left: 0; 
