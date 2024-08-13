@@ -374,9 +374,13 @@ input[name='q']::placeholder {
         font-size: .9rem;
     }
     
-    /* Contact us background invisible on smaller screens */
-    .form-container {
-        background-image:none;
+    /* Contact us form */
+    .form-content {
+        padding: 10px;
+    }
+
+    #price {
+        font-size:50%;
     }
 
     .btn.btn-outline-black.rounded-0,
