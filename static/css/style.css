@@ -380,7 +380,7 @@ input[name='q']::placeholder {
     }
 
     #price {
-        font-size:50%;
+        font-size:80%;
     }
 
     .btn.btn-outline-black.rounded-0,
