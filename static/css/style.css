@@ -379,10 +379,6 @@ input[name='q']::placeholder {
         padding: 10px;
     }
 
-    #price {
-        font-size:80%;
-    }
-
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
         padding: .375rem .375rem;
