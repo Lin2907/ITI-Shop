@@ -376,7 +376,7 @@ input[name='q']::placeholder {
     
     /* Contact us background invisible on smaller screens */
     .form-container {
-        display:none;
+        background-image:none;
     }
 
     .btn.btn-outline-black.rounded-0,
