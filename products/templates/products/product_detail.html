@@ -41,19 +41,19 @@
 {% if user.is_authenticated %}
     <div class="mt-2">
         {% if user_wishlist %}
-            <button class="wishlist-toggle disabled" title="Already in Wishlist" disabled>
-                <i class="fas fa-heart active"></i> In Wishlist
+            <button class="wishlist-toggle disabled" title="Already in Wishlist" disabled style="font-size: 14px; padding: 5px 10px;">
+                <i class="fas fa-heart active" style="font-size: 14px;"></i> In Wishlist
             </button>
         {% else %}
-            <a href="{% url 'toggle_wishlist' product.id %}" class="wishlist-toggle" title="Add to Wishlist">
-                <i class="fas fa-heart"></i> Add to Wishlist
+            <a href="{% url 'toggle_wishlist' product.id %}" class="wishlist-toggle" title="Add to Wishlist" style="font-size: 14px; padding: 5px 10px;">
+                <i class="fas fa-heart" style="font-size: 14px;"></i> Add to Wishlist
             </a>
         {% endif %}
     </div>
 {% else %}
     <div class="mt-2">
-        <a href="{% url 'account_login' %}" class="wishlist-toggle" title="Login to add to Wishlist">
-            <i class="fas fa-heart"></i> Add to Wishlist
+        <a href="{% url 'account_login' %}" class="wishlist-toggle" title="Login to add to Wishlist" style="font-size: 14px; padding: 5px 10px;">
+            <i class="fas fa-heart" style="font-size: 14px;"></i> Add to Wishlist
         </a>
     </div>
 {% endif %}
