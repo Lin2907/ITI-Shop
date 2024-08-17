@@ -26,6 +26,9 @@ def newsletter_signup(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'You have successfully signed up for the newsletter.')
+
+            # Send confirmation email
+            confirm_newsletter(newsletter_signup)
             return render(request, 'home/newsletter_signup.html', {'form': form})
         else:
             messages.error(request, 'Registration error. Please verify your email address.')
