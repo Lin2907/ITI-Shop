@@ -1,7 +1,11 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from products.models import Product
+from .models import NewsletterSignup
 from .forms import NewsletterSignupForm
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.conf import settings
 
 def index(request):
     """A view to return the index page with random products"""
@@ -28,6 +32,22 @@ def newsletter_signup(request):
             return render(request, 'home/index.html')
     else:
         form = NewsletterSignupForm()
+
+#Email confirmation to user
+
+def confirm_newsletter(newsletter_signup):
+    
+    cust_email = newsletter_signup.email
+    subject = render_to_string(
+        "home/email_templates/newsletter_subject.txt",
+        {"newsletter_signup": newsletter_signup},
+    )
+    body = render_to_string(
+        "home/email_templates/newsletter_body.txt",
+        {"newsletter_signup": newsletter_signup, "contact_email": settings.DEFAULT_FROM_EMAIL},
+    )
+
+    send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [cust_email])
     
     
     # 404 and 500 error views
