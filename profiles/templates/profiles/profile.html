@@ -75,11 +75,11 @@
         </div>
         </div>
         <!--Wishlist section-->
-        <h4 style ="text-align: center; margin-top: 10% ;">Your Wishlist</h4>
+        <h5 style ="text-align: center; padding:5% ;">Wishlist</h5>
 {% if wishlist.products.all %}
     <div class="row">
         {% for product in wishlist.products.all %}
-        <div class="col-md-3" style="margin:10px;">
+        <div class="col-md-3" style="margin:auto;">
             <div class="card">
                 <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
                 <div class="card-body">
