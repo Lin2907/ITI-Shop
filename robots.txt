@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Disallow: /profiles/
+Disallow: /checkout/
+Sitemap:https://iti-shop-15bc9a913a6f.herokuapp.com/sitemap.xml
