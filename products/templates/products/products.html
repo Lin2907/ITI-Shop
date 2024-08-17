@@ -69,7 +69,19 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                                            {% if product.is_on_sale %}
+                                            <div class="sale-footer bg-white d-flex flex-row align-items-center justify-content-center mt-2">
+                                                <span class="h6 pr-3 text-left font-weight-bold price-font-original text-decoration-line-through">
+                                                    €{{ product.old_price }}
+                                                </span>
+                                                <p class="lead mb-0 text-left font-weight-bold" style="color:red;">
+                                                    €{{ product.price }}
+                                                </p>
+                                            </div>
+                                        {% else %}
+                                            <!-- Regular price -->
+                                            <p class="lead mb-0 text-left font-weight-bold mt-2">€{{ product.price }}</p>
+                                        {% endif %}
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">

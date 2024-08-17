@@ -24,6 +24,7 @@ class Product(models.Model):
     description = models.TextField()
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
+    old_price = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
@@ -32,6 +33,10 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    @property
+    def is_on_sale(self):
+        return self.old_price and self.old_price > self.price
 
 class Review(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
