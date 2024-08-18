@@ -148,7 +148,8 @@ def delete_product(request, product_id):
     return redirect(reverse('products'))
 
 #Review views
-    
+
+@login_required
 def add_review(request, product_id):
     product = get_object_or_404(Product, id=product_id)
     
@@ -174,6 +175,43 @@ def add_review(request, product_id):
     return render(request, 'products/add_review.html', {'product': product, 'form':ReviewForm()})
 
 
+    # Editing and deleting reviews
+
+@login_required
+def edit_review(request, review_id):
+    review = get_object_or_404(Review, id=review_id)
+
+    # The user must be the author of the review to be able to edit it
+    if review.author_email != request.user.email:
+        messages.error(request, 'You are not authorized to edit this review.')
+        return redirect('product_detail', product_id=review.product.id)
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Review updated successfully.')
+            return redirect(reverse('product_detail', args=[review.product.id]))
+        else:
+            messages.error(request, 'Failed to update the review. Please ensure the form is valid.')
+    else:
+        form = ReviewForm(instance=review)
+
+    return render(request, 'products/edit_review.html', {'form': form, 'product': review.product})
+
+
+@login_required
+def delete_review(request, review_id):
+    review = get_object_or_404(Review, id=review_id)
+
+    # The user must be the author of the review to be able to delete it
+    if review.author_email != request.user.email:
+        messages.error(request, 'You are not authorized to delete this review.')
+        return redirect('product_detail', product_id=review.product.id)
+
+    review.delete()
+    messages.success(request, 'Review deleted successfully.')
+    return redirect(reverse('product_detail', args=[review.product.id]))
 
     # A view for toggeling the wishlist
 

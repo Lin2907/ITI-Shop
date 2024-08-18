@@ -81,7 +81,7 @@
 </small>
 {% endif %}
 <p class="mt-3">{{ product.description }}</p>
- <!-- Materials Toggle -->
+ <!-- Materials button -->
  <div class="mt-3">
     <button class="btn btn-dark mb-2" type="button" data-toggle="collapse" data-target="#materialsCollapse" aria-expanded="false" aria-controls="materialsCollapse">
         View Materials
@@ -173,53 +173,60 @@
 </div>
 <!-- Product Reviews Section -->
 <hr class="border-2 mt-5">
-<div class="row" style="display: flex;
-justify-content: center;
-align-items: center; 
-flex-direction: column;">
-{% if reviews %}
-<div class="col-12 col-lg-7">
-<div class="p-2">
-    <ul class="list-group">
-        {% for review in reviews %}
-        <li class="list-group-item card border-dark" style="max-width: 80rem;">
-            <h6 class="content-font card-header border-dark" style ="background-color: black; color:white;"><strong>Review written by:
-                </strong>{{ review.author_name }}</h6>
-            <p class="content-font card-body text-dark">{{ review.content }}</p>
-            <p class="content-font card-body text-dark">
-                Rating: 
-                {% for i in "12345" %}
-                    <span>{% if forloop.counter <= review.rating %}&#9733;{% else %}&#9734;{% endif %}</span>
+<div class="row justify-content-center align-items-center flex-column">
+    {% if reviews %}
+    <div class="col-12 col-lg-7">
+        <div class="p-2">
+            <ul class="list-group">
+                {% for review in reviews %}
+                <li class="list-group-item card border-dark mb-3" style="max-width: 80rem;">
+                    <h6 class="content-font card-header border-dark" style="background-color: black; color: white;">
+                        <strong>Review written by:</strong> {{ review.author_name }}
+                    </h6>
+                    <div class="card-body text-dark">
+                        <p class="content-font">{{ review.content }}</p>
+                        <p class="content-font">
+                            Rating: 
+                            {% for i in "12345" %}
+                                <span>{% if forloop.counter <= review.rating %}&#9733;{% else %}&#9734;{% endif %}</span>
+                            {% endfor %}
+                        </p>
+                        <hr class="border-0">
+                        <p class="content-font">Posted on: {{ review.created_on }}</p>
+                    </div>
+                    <!-- Edit and Delete Buttons -->
+                    {% if review.author_email == request.user.email %}
+                    <div class="review-actions">
+                        <a href="{% url 'edit_review' review.id %}" class="btn btn-primary btn-sm" style="background-color: black; border: none;">Edit</a>
+                        <a href="{% url 'delete_review' review.id %}" class="btn btn-danger btn-sm" style="border: none;" 
+                           onclick="return confirm('Are you sure you want to delete this review?');">
+                           Delete
+                        </a>
+                    </div>
+                    {% endif %}
+                </li>
+                <hr class="border-0">
                 {% endfor %}
-            </p>
-            <hr class="border-0">
-            <p class="content-font card-body text-dark">Posted on: {{ review.created_on }}</p>
-        </li>
-        <hr class="border-0">
-        {% endfor %}
-    </ul>
+            </ul>
+        </div>
+    </div>
+    {% else %}
+    <div class="col-12 col-lg-7">
+        <h6 class="text-center">No reviews yet. Be the first to review this product!</h6>
+    </div>
+    {% endif %}
 </div>
-{% else %}
-<div class="col-12 col-lg-7">
-<h6 style = "padding-left:10%;">No reviews yet. Be the first to review this product!</h6>
-</div>
-{% endif %}
-</div>
-</div>
-</div>
-</div>
-
 <!-- Add Review Section -->
 <div class="row mt-5">
-<div class="col-12 col-md-8 offset-md-2" style="display: flex;
-flex-direction: column; align-items: center;">
-<form method="post" action="{% url 'add_review' product.id %}">
-{% csrf_token %}
-{{ review_form|crispy }}
-<button type="submit" class="btn btn-primary" style="background-color: black; border: black; align-self: center;">Add a Review</button>
-</form>
-</div>
-</div>
+    <div class="col-12 col-md-8 offset-md-2 d-flex flex-column align-items-center">
+        <form method="post" action="{% url 'add_review' product.id %}">
+            {% csrf_token %}
+            {{ review_form|crispy }}
+            <button type="submit" class="btn btn-primary" style="background-color: black; border: black; align-self: center;">
+                Add a Review
+            </button>
+        </form>
+    </div>
 </div>
 {% endblock %}
 
