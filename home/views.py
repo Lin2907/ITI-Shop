@@ -24,7 +24,7 @@ def newsletter_signup(request):
     if request.method == 'POST':
         form = NewsletterSignupForm(request.POST)
         if form.is_valid():
-            form.save()
+            newsletter_signup = form.save()
             messages.success(request, 'You have successfully signed up for the newsletter.')
 
             # Send confirmation email
