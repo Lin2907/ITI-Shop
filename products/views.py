@@ -151,31 +151,27 @@ def delete_product(request, product_id):
 
 @login_required
 def add_review(request, product_id):
-    product = get_object_or_404(Product, id=product_id)
-    
+    product = get_object_or_404(Product, pk=product_id)
+
     if request.method == 'POST':
         review_form = ReviewForm(request.POST)
         if review_form.is_valid():
-            review = review_form.save(commit=False)
-            review.product = product
-            
-            if request.user.is_authenticated:
+            try:
+                review = review_form.save(commit=False)
+                review.product = product
                 review.author_name = request.user.username
                 review.author_email = request.user.email
-            else:
-                review.author_name = request.POST.get('author_name', 'Anonymous')
-                review.author_email = request.POST.get('author_email', None)  # Set to None if not provided
-            
-            review.save()
-            messages.success(request, 'Review added successfully.')
-            return redirect(reverse('product_detail', args=[product.id]))
-    else:
-        messages.error(request, 'Error adding your review. Please ensure all fields are filled out correctly.')
+                review.save()
+                messages.success(request, "Your review has been successfully added!")
+                return redirect(reverse("product_detail", args=[product.id]))
+            except IntegrityError:
+                messages.error(request, "You have already reviewed this product.")
+                return redirect(reverse("product_detail", args=[product.id]))
+    
+    # If the request method is not POST, or the form is not valid, redirect to the product detail page
+    return render(request, 'products/add_review.html', {'product': product, 'form': ReviewForm()})
 
-    return render(request, 'products/add_review.html', {'product': product, 'form':ReviewForm()})
-
-
-    # Editing and deleting reviews
+# Editing and deleting reviews
 
 @login_required
 def edit_review(request, review_id):
