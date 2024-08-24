@@ -6,9 +6,9 @@
 
 {% block inner_content %}
 <hr>
-<h2 class="logo-font mb-4">{% trans "Sign Out" %}</h2>
+<h6 class="logo-font mb-4" style="margin-top: 6% ;">{% trans "Sign Out" %}</h6>
 <hr>
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
+<p style="font-size: 80% important;">{% trans 'Are you sure you want to sign out?' %}</p>
 
 <form method="post" action="{% url 'account_logout' %}">
   {% csrf_token %}
