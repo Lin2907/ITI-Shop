@@ -9,312 +9,307 @@
 
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/accounts/login/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/bag/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/?category=ladies</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/?category=gentlemen</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/?category=new-arrivals</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/?category=ladies,gentlemen,new-arrivals</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/?category=eyewear</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/?category=bags</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/?category=eyewear,bags</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/?category=sale</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/contact_us/contact/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/?category=New%20Arrivals</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/?category=Eyewear,Bags</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/36/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/14/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/1/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/27/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/24/</loc>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/13/</loc>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/23/</loc>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/faq/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/15/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/42/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/20/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/11/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/22/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/23/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/26/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/27/</loc>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/28/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/21/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/37/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/21/</loc>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/38/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/14/</loc>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/31/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/32/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/25/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/24/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/17/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/33/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/34/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/30/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/29/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/16/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/30/</loc>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/19/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/16/</loc>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/35/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/9/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/8/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/10/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/40/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/18/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/10/</loc>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/39/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/18/</loc>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/4/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/13/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/41/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/6/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/36/</loc>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/5/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/3/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/2/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/products/12/</loc>
-  <lastmod>2024-08-17T19:55:25+00:00</lastmod>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://iti-shop-15bc9a913a6f.herokuapp.com/privacy_policy/</loc>
+  <lastmod>2024-08-24T19:30:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
