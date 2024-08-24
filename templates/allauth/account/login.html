@@ -8,7 +8,7 @@
 {% block inner_content %}
 
 <hr>
-<h6 class="logo-font mb-4" style="margin-top: 6%;">{% trans "Sign In" %}</h2>
+<h6 class="logo-font mb-4" style="margin-top: 15% !important;">{% trans "Sign In" %}</h6>
 <hr>
 
 {% get_providers as socialaccount_providers %}
@@ -31,7 +31,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 {% include "socialaccount/snippets/login_extra.html" %}
 
 {% else %}
-<p style="font-size: 80% important;">{% blocktrans %}If you have not created an account yet, then please
+<p style="font-size: 80% !important;">{% blocktrans %}If you have not created an account yet, then please
 <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
 {% endif %}
 
