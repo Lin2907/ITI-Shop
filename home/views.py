@@ -61,3 +61,8 @@ def custom_404(request, exception):
 
 def custom_500(request):
     return render(request, 'home/500.html', status=500)
+
+#Privacy policy view
+def privacy_policy(request):
+
+    return render(request, "home/privacy_policy.html")
