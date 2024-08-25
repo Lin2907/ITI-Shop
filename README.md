@@ -8,6 +8,8 @@
 
 ITI Shop is an online clothing store offering a wide variety of fashion items. The website is easy to navigate, allowing customers to browse and purchase products quickly. With features like product reviews and wishlists, ITI Shop provides a smooth and enjoyable shopping experience. The site is designed with security in mind, ensuring that all transactions are safe and user information is protected.
 
+Live site [ITI Shop](https://iti-shop-15bc9a913a6f.herokuapp.com/).
+
 ## Table of Contents
 
 ### [UX](#ux)
