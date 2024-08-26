@@ -25,7 +25,7 @@ Live site [ITI Shop](https://iti-shop-15bc9a913a6f.herokuapp.com/).
 
 
 
-## [Wireframes](#wireframes)
+## [Wireframes](#wireframes-1)
 
 ### [Database Design](#database-design)
 
@@ -188,6 +188,20 @@ Based on the user stories, a detailed project implementation plan was created. Y
 </details>
 <br>
 <details>
+<summary><h4 style="display: inline;">Checkout Page</h4></summary>
+<br>
+<img src= "media/screenshots/checkout-page-wireframe.png" alt= "Checkout page wireframe">
+<img src= "media/screenshots/checkout-mobile.png" alt= "Checkout page wireframe for mobile screens">
+</details>
+<br>
+<details>
+<summary><h4 style="display: inline;">Profile Page</h4></summary>
+<br>
+<img src= "media/screenshots/profile-page-wireframe.png" alt= "Profile page wireframe">
+<img src= "media/screenshots/profile-page-mobile.png" alt= "Profile page wireframe for mobile screens">
+</details>
+<br>
+<details>
 <summary><h4 style="display: inline;">Sign Up Page</h4></summary>
 <br>
 <img src= "media/screenshots/sign-up-wireframe.png" alt= "Sign up page wireframe">
@@ -220,6 +234,7 @@ Based on the user stories, a detailed project implementation plan was created. Y
 <img src= "media/screenshots/500-wireframe.png" alt= "Error 500 page wireframe">
 <img src= "media/screenshots/500-mobile.png" alt= "Error 500 page wireframe for mobile screens">
 </details>
+
 
 
 ## Database Design
