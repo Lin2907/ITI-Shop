@@ -29,10 +29,7 @@ Live site [ITI Shop](https://iti-shop-15bc9a913a6f.herokuapp.com/).
 
 ### [Database Design](#database-design)
 
-### [Main Plan](#main-plan)
-
-### [Structure ](#structure)
-- [Features](#features)
+### [Features](#features)
   - [Home Page](#home-page)
   - [Random Products Section](#)
   - [Newsletter Subscription Section](#)
@@ -146,41 +143,41 @@ Based on the user stories, a detailed project implementation plan was created. Y
 
 ## Wireframes
 <details>
-<summary><h4 style="display: inline;">Landing page</h4></summary>
+<summary>Landing page</summary>
 <br>
 <img src= "media/screenshots/home-page-wireframe.png" alt= "Landing page wireframe">
 <img src= "media/screenshots/home-page-mobile.png" alt= "Landing page wireframe for mobile screens">
 </details>
 <br>
 <details>
-<summary><h4 style="display: inline;">Product Page</h4></summary>
+<summary>Product Page</summary>
 <br>
 <img src= "media/screenshots/product-page-wireframe.png" alt= "All products page wireframe">
 <img src= "media/screenshots/product-page-mobile.png" alt= "All products page wireframe for mobile screens">
 </details>
 <br>
 <details>
-<summary><h4 style="display: inline;">Product Detail Page</h4></summary>
+<summary>Product Detail Page</summary>
 <br>
 <img src= "media/screenshots/product-detail-page-wireframe.png" alt= "Product detail page wireframe">
 <img src= "media/screenshots/product-detail-mobile.png" alt= "Product detail page wireframe for mobile screens">
 </details>
 <br>
 <details>
-<summary><h4 style="display: inline;">Newsletter Page</h4></summary>
+<summary>Newsletter Page</summary>
 <br>
 <img src= "media/screenshots/newsletter-wireframe.png" alt= "Newsletter success page wireframe">
 <img src= "media/screenshots/newsletter-mobile.png" alt= "Newsletter success page wireframe for mobile screens">
 </details>
 <br>
 <details>
-<summary><h4 style="display: inline;">Add a Review Page</h4></summary>
+<summary>Add a Review Page</summary>
 <br>
 <img src= "media/screenshots/add-review-wireframe.png" alt= "Add a review page wireframe">
 <img src= "media/screenshots/review-mobile.png" alt= "Add a review page wireframe for mobile screens">
 </details>
 <br>
-<details open>
+<details>
 <summary>Contact Us Page</summary>
 <br>
 <img src= "media/screenshots/contact-us-wireframe.png" alt= "Contact us page wireframe">
@@ -188,48 +185,47 @@ Based on the user stories, a detailed project implementation plan was created. Y
 </details>
 <br>
 <details>
-<summary><h4 style="display: inline;">Checkout Page</h4></summary>
+<summary>Checkout Page</summary>
 <br>
 <img src= "media/screenshots/checkout-page-wireframe.png" alt= "Checkout page wireframe">
 <img src= "media/screenshots/checkout-mobile.png" alt= "Checkout page wireframe for mobile screens">
 </details>
 <br>
 <details>
-<summary><h4 style="display: inline;">Profile Page</h4></summary>
-<br>
+<summary>Profile Page</summary>
 <img src= "media/screenshots/profile-page-wireframe.png" alt= "Profile page wireframe">
 <img src= "media/screenshots/profile-page-mobile.png" alt= "Profile page wireframe for mobile screens">
 </details>
 <br>
 <details>
-<summary><h4 style="display: inline;">Sign Up Page</h4></summary>
+<summary>Sign Up Page</summary>
 <br>
 <img src= "media/screenshots/sign-up-wireframe.png" alt= "Sign up page wireframe">
 <img src= "media/screenshots/sign-up-mobile.png" alt= "Sign up page wireframe for mobile screens">
 </details>
 <br>
 <details>
-<summary><h4 style="display: inline;">Log in Page</h4></summary>
+<summary>Log in Page</summary>
 <br>
 <img src= "media/screenshots/log-in-wireframe.png" alt= "Newsletter success page wireframe">
 <img src= "media/screenshots/log-in-mobile.png" alt= "Newsletter success page wireframe for mobile screens">
 </details>
 <br>
 <details>
-<summary><h4 style="display: inline;">Log out Page</h4></summary>
+<summary>Log out Page</summary>
 <br>
 <img src= "media/screenshots/sign-out-wireframe.png" alt= "Sign out page wireframe">
 </details>
 <br>
 <details>
-<summary><h4 style="display: inline;">Custom 404 Page</h4></summary>
+<summary>Custom 404 Page</summary>
 <br>
 <img src= "media/screenshots/404-wireframe.png" alt= "Error 404 page wireframe">
 <img src= "media/screenshots/404-mobile.png" alt= "Error 404 page wireframe for mobile screens">
 </details>
 <br>
 <details>
-<summary><h4 style="display: inline;">Custom 500 Page</h4></summary>
+<summary>Custom 500 Page</summary>
 <br>
 <img src= "media/screenshots/500-wireframe.png" alt= "Error 500 page wireframe">
 <img src= "media/screenshots/500-mobile.png" alt= "Error 500 page wireframe for mobile screens">
@@ -241,5 +237,24 @@ Based on the user stories, a detailed project implementation plan was created. Y
 
 ### ERD - Entity Relationship Diagram
 
-<img src= "media/screenshots/erd-iti.png" alt= "Entity Relationship Diagram">
+<img src= "media/screenshots/erd.png" alt= "Entity Relationship Diagram">
 
+### Features
+
+#### Home Page
+
+The landing page features a dynamic header carousel showcasing captivating images of various clothing categories, immediately drawing users into the site's offerings. Below, a selection of random products is displayed to inspire browsing, while a newsletter signup form invites visitors to stay updated on the latest trends and exclusive deals.
+
+<img src= "media/screenshots/landing-page-1.png" alt= "Landing page hero image">
+<br>
+Random Products Gallery
+<br>
+<br>
+<img src= "media/screenshots/random-products-gallery.png" alt= "Gallery of random selected products">
+<br>
+<br>
+Newsletter Signup
+<br>
+<br>
+<img src= "media/screenshots/newsletter-sign-up.png" alt= "Newsletter sign up form">
+<br>
