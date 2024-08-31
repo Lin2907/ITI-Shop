@@ -270,13 +270,15 @@ Newsletter Signup
 <img src= "media/screenshots/footer.png" alt= "Footer">
 <img src= "media/screenshots/product-page.png" alt= "All products page">
 <img src= "media/screenshots/all-products-page-admin.png" alt= "All products page admin view">
-<img src= "media/screenshots/all-products-by-category.png" alt= "Products by category page">
-<img src= "media/screenshots/all-products-page-admin" alt= "All products page">
+<img src= "media/screenshots/products-by-category.png" alt= "Products by category page">
 <img src= "media/screenshots/product-detail-page.png" alt= "Product details page">
 <img src= "media/screenshots/view-materials-toggle.png" alt= "View Product Materials option">
 <img src= "media/screenshots/similar-product-section.png" alt= "Similar Products section">
 <img src= "media/screenshots/reviews-section.png" alt= "Product reviews section">
 <img src= "media/screenshots/add-review-page.png" alt= "Add a review page">
+<img src= "media/screenshots/clothing-page.png" alt= "Clothing page">
+<img src= "media/screenshots/accessories-page.png" alt= "Accessories page">
+<img src= "media/screenshots/sale-page.png" alt= "Sale page">
 <img src= "media/screenshots/contact-us-page.png" alt= "Contact Us Page">
 <img src= "media/screenshots/contact-us-email.png" alt= "Contact confirmation email">
 <img src= "media/screenshots/profile-page.png" alt= "User Profile page">
