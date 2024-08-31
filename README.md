@@ -239,14 +239,19 @@ Based on the user stories, a detailed project implementation plan was created. Y
 
 <img src= "media/screenshots/erd.png" alt= "Entity Relationship Diagram">
 
-### Features
+## Features
 
-#### Home Page
+### Home Page
 
 The landing page features a dynamic header carousel showcasing captivating images of various clothing categories, immediately drawing users into the site's offerings. Below, a selection of random products is displayed to inspire browsing, while a newsletter signup form invites visitors to stay updated on the latest trends and exclusive deals.
 
 <img src= "media/screenshots/landing-page-1.png" alt= "Landing page hero image">
 <br>
+<br>
+New Arrivals Teaser Section
+<br>
+<br>
+<img src= "media/screenshots/new-arrivals-teaser.png" alt= "Free delivery banner and New arrivals text including shopping button">
 Random Products Gallery
 <br>
 <br>
@@ -257,4 +262,32 @@ Newsletter Signup
 <br>
 <br>
 <img src= "media/screenshots/newsletter-sign-up.png" alt= "Newsletter sign up form">
+<img src= "media/screenshots/newsletter-success-page.png" alt= "Newsletter sucess page">
+<img src= "media/screenshots/newsletter-mail-confirmation.png" alt= "All products page">
 <br>
+<img src= "media/screenshots/top-nav.png" alt= "Top Navigation">
+<img src= "media/screenshots/main-nav.png" alt= "Main Nav">
+<img src= "media/screenshots/footer.png" alt= "Footer">
+<img src= "media/screenshots/product-page.png" alt= "All products page">
+<img src= "media/screenshots/all-products-page-admin.png" alt= "All products page admin view">
+<img src= "media/screenshots/all-products-by-category.png" alt= "Products by category page">
+<img src= "media/screenshots/all-products-page-admin" alt= "All products page">
+<img src= "media/screenshots/product-detail-page.png" alt= "Product details page">
+<img src= "media/screenshots/view-materials-toggle.png" alt= "View Product Materials option">
+<img src= "media/screenshots/similar-product-section.png" alt= "Similar Products section">
+<img src= "media/screenshots/reviews-section.png" alt= "Product reviews section">
+<img src= "media/screenshots/add-review-page.png" alt= "Add a review page">
+<img src= "media/screenshots/contact-us-page.png" alt= "Contact Us Page">
+<img src= "media/screenshots/contact-us-email.png" alt= "Contact confirmation email">
+<img src= "media/screenshots/profile-page.png" alt= "User Profile page">
+<img src= "media/screenshots/wishlist-section.png" alt= "Wishlist section">
+<img src= "media/screenshots/shopping-bag.png" alt= "Shopping bag page">
+<img src= "media/screenshots/checkout-page.png" alt= "Checkout page">
+<img src= "media/screenshots/order-confirmation-page.png" alt= "Order confirmation page">
+<img src= "media/screenshots/order-confirmation-email.png" alt= "Order confirmation email">
+<img src= "media/screenshots/sign-up-page.png" alt= "Sign up page">
+<img src= "media/screenshots/log-in-page.png" alt= "Log in page">
+<img src= "media/screenshots/log-out-page.png" alt= "Log out page">
+
+
+
