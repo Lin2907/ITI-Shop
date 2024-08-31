@@ -180,8 +180,8 @@ Based on the user stories, a detailed project implementation plan was created. Y
 <img src= "media/screenshots/review-mobile.png" alt= "Add a review page wireframe for mobile screens">
 </details>
 <br>
-<details>
-<summary><h4 style="display: inline;">Contact Us Page</h4></summary>
+<details open>
+<summary>Contact Us Page</summary>
 <br>
 <img src= "media/screenshots/contact-us-wireframe.png" alt= "Contact us page wireframe">
 <img src= "media/screenshots/contact-us-mobile.png" alt= "Contact Us page wireframe for mobile screens">
@@ -241,5 +241,5 @@ Based on the user stories, a detailed project implementation plan was created. Y
 
 ### ERD - Entity Relationship Diagram
 
-<img>
+<img src= "media/screenshots/erd-iti.png" alt= "Entity Relationship Diagram">
 
