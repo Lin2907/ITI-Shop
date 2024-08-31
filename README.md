@@ -281,6 +281,7 @@ Newsletter Signup
 <img src= "media/screenshots/sale-page.png" alt= "Sale page">
 <img src= "media/screenshots/contact-us-page.png" alt= "Contact Us Page">
 <img src= "media/screenshots/contact-us-email.png" alt= "Contact confirmation email">
+<img src= "media/screenshots/faq-page.png" alt= "FAQ Page">
 <img src= "media/screenshots/profile-page.png" alt= "User Profile page">
 <img src= "media/screenshots/wishlist-section.png" alt= "Wishlist section">
 <img src= "media/screenshots/shopping-bag.png" alt= "Shopping bag page">
@@ -290,6 +291,7 @@ Newsletter Signup
 <img src= "media/screenshots/sign-up-page.png" alt= "Sign up page">
 <img src= "media/screenshots/log-in-page.png" alt= "Log in page">
 <img src= "media/screenshots/log-out-page.png" alt= "Log out page">
+
 
 
 
