@@ -49,6 +49,21 @@ var form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function(ev) {
     ev.preventDefault();
+
+    // Check all quantities
+    var quantities = document.querySelectorAll('.quantity-input');
+    var quantityExceedsLimit = false;
+
+    quantities.forEach(function(quantityInput) {
+        if (parseInt(quantityInput.value) > 99) {
+            quantityExceedsLimit = true;
+            alert('Quantity cannot exceed 99 for any product.');
+        }
+    });
+
+    if (quantityExceedsLimit) {
+        return; // Stop form submission if the limit is exceeded
+    }
     card.update({ 'disabled': true});
     $('#submit-button').attr('disabled', true);
     $('#payment-form').fadeToggle(100);

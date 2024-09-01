@@ -246,51 +246,188 @@ Based on the user stories, a detailed project implementation plan was created. Y
 The landing page features a dynamic header carousel showcasing captivating images of various clothing categories, immediately drawing users into the site's offerings. Below, a selection of random products is displayed to inspire browsing, while a newsletter signup form invites visitors to stay updated on the latest trends and exclusive deals.
 
 <img src= "media/screenshots/landing-page-1.png" alt= "Landing page hero image">
-<br>
-<br>
-New Arrivals Teaser Section
-<br>
+
+ #### New Arrivals Teaser Section
 <br>
 <img src= "media/screenshots/new-arrivals-teaser.png" alt= "Free delivery banner and New arrivals text including shopping button">
-Random Products Gallery
-<br>
+
+#### Random Products Gallery
 <br>
 <img src= "media/screenshots/random-products-gallery.png" alt= "Gallery of random selected products">
+
+#### Newsletter Signup Form
 <br>
-<br>
-Newsletter Signup
-<br>
+This feature allows users to sign up for the newsletter, receiving a confirmation email upon successful registration to stay updated on the latest products and offers.
 <br>
 <img src= "media/screenshots/newsletter-sign-up.png" alt= "Newsletter sign up form">
+<br>
+<br>
 <img src= "media/screenshots/newsletter-success-page.png" alt= "Newsletter sucess page">
+
+#### Newsletter subscription Email
+<br>
 <img src= "media/screenshots/newsletter-mail-confirmation.png" alt= "All products page">
 <br>
+
+### Navigation
+
+#### Top Navigation
+
+The top navigation bar features the store logo and a search area where users can search for different products. The "My Account" section provides logged-in users with access to their profile, product management for admin users, and a log-out option. For unlogged users, it offers options to register or log in. The top nav bar also includes a shopping bag icon that displays the total amount when items are added. Additionally, it's the designated area for pop-up messages for the user.
+<br>
+<br>
 <img src= "media/screenshots/top-nav.png" alt= "Top Navigation">
+
+#### Main Navigation
+The main navigation bar includes links to the homepage, a dropdown menu for all product categories, a dropdown menu for accessories categories, a link to sale products, and a link to the contact us form.
+<br>
+<br>
 <img src= "media/screenshots/main-nav.png" alt= "Main Nav">
+
+#### Footer
 <img src= "media/screenshots/footer.png" alt= "Footer">
+
+### All Products Page
+
+ Users can explore products across various categories, with options to view them sorted by different criteria for a more personalized shopping experience.
+<br>
+<br>
 <img src= "media/screenshots/product-page.png" alt= "All products page">
-<img src= "media/screenshots/all-products-page-admin.png" alt= "All products page admin view">
+
+#### Sunglasses category display
 <img src= "media/screenshots/products-by-category.png" alt= "Products by category page">
+<br>
+<br>
+Given a user is logged in as an admin (superuser), they have the option to edit or delete products .
+<br>
+<br>
+<img src= "media/screenshots/all-products-page-admin.png" alt= "All products page admin view">
+<br>
+<br>
+
+### Product Detail Page
+On the product detail page, users can view the product's image, name, price, rating, and detailed description. Logged-in users have the option to add the item to their wishlist, after which the wishlist button is disabled. A material toggle button reveals the product's materials if provided. The page also features a "Similar and Matching Products" section, showcasing the same products in different colors or related items. Additionally, there's an "Add Review" section where users can write reviews and rate the product. Logged-in users can edit or delete their own reviews for more control over their feedback.
+   <br>
+   <br>
 <img src= "media/screenshots/product-detail-page.png" alt= "Product details page">
+
+#### View Materials Toggle
 <img src= "media/screenshots/view-materials-toggle.png" alt= "View Product Materials option">
+
+#### Similar and Matching Product Section
+
 <img src= "media/screenshots/similar-product-section.png" alt= "Similar Products section">
+
+#### Reviews Section
 <img src= "media/screenshots/reviews-section.png" alt= "Product reviews section">
+<br>
+
+#### Add a review page
 <img src= "media/screenshots/add-review-page.png" alt= "Add a review page">
+<br>
+
+#### Edit Review
+<img src= "media/screenshots/edit-review.png" alt= "Edit review">
+<br>
+
+### Clothing Page
+Users can explore a wide range of clothing items, with sections dedicated to Ladies, Gentlemen, New arrivals and all Clothing , organized into easily navigable categories.
+<br>
 <img src= "media/screenshots/clothing-page.png" alt= "Clothing page">
+
+### Accessories Page
+
+This page offers a selection of bags and eyewear for both men and women, allowing users to find the perfect accessories to complement their outfits.
+<br>
 <img src= "media/screenshots/accessories-page.png" alt= "Accessories page">
+
+### Sale Page
+
+Users can browse through items at reduced prices, where the original price is displayed with a strikethrough, and the discounted price is highlighted in red.
+<br>
 <img src= "media/screenshots/sale-page.png" alt= "Sale page">
+
+### Contact Us Page
+A form is available for users to contact the shop's service team with any inquiries. Upon submission, users receive a confirmation email containing the details of their message.
+<br>
+<br>
 <img src= "media/screenshots/contact-us-page.png" alt= "Contact Us Page">
+<br>
+<br>
+Contact confirmation Email example
+<br>
+<br>
 <img src= "media/screenshots/contact-us-email.png" alt= "Contact confirmation email">
+
+### FAQ Page
+
+This page lists frequently asked questions, with answers that are revealed when the user clicks on the relevant question, providing quick and easy access to important information.
+<br>
+<br>
 <img src= "media/screenshots/faq-page.png" alt= "FAQ Page">
+
+### Profile Page
+
+The profile page allows users to manage and update their delivery information to ensure accurate and timely orders. Users can also view a detailed list of their past orders, keeping track of their purchase history. Additionally, the profile page includes a section where users can easily access and manage their wishlist, reviewing items they’ve saved for future purchase.
+<br>
+<br>
 <img src= "media/screenshots/profile-page.png" alt= "User Profile page">
+
+#### Wishlist Section
 <img src= "media/screenshots/wishlist-section.png" alt= "Wishlist section">
+
+### Shopping Bag
+
+The shopping bag page provides users with an overview of their selected items for a future order. Users can easily manage their shopping bag by updating the quantity of each item or adding and removing products as needed. This feature ensures that users can make adjustments before proceeding to checkout, allowing for a seamless and personalized shopping experience.
+<br>
+<br>
 <img src= "media/screenshots/shopping-bag.png" alt= "Shopping bag page">
+
+### Checkout Page
+
+The checkout page allows users to finalize their purchase by entering all necessary delivery information and reviewing their order details. Here, users can also securely add their payment information and place the order. After completing the transaction, the customer will receive a confirmation email with the order details, and a success message will pop up on the screen, confirming that the order has been placed.
+<br>
+<br>
 <img src= "media/screenshots/checkout-page.png" alt= "Checkout page">
+
+#### Order Confirmation Page
 <img src= "media/screenshots/order-confirmation-page.png" alt= "Order confirmation page">
+
+#### Order Confirmation Email
 <img src= "media/screenshots/order-confirmation-email.png" alt= "Order confirmation email">
+
+### Sign-Up Page
+
+The sign-up page enables new users to create an account by providing their email, password, and other essential information, with authentication ensuring secure account creation.
 <img src= "media/screenshots/sign-up-page.png" alt= "Sign up page">
+
+#### Email Verification Page
+<img src= "media/screenshots/sign-up-email-verification.png" alt= "Sign up verification page">
+
+#### Confirmation link Email
+<img src= "media/screenshots/email-verification-link.png" alt= "Verification link sent email">
+
+### Sign In
+
+The Sign in page allows returning users to securely access their account using their credentials .
+<br>
+<br>
 <img src= "media/screenshots/log-in-page.png" alt= "Log in page">
+
+### Sign Out
+The sign out page provides a secure way to end the session, maintaining user data privacy through authentication.
+<br>
+<br>
 <img src= "media/screenshots/log-out-page.png" alt= "Log out page">
+
+### Product Management Page
+The product management page allows admin users (store owners) to add new products to the store, providing an interface for entering product details like name, price, description, rating and images, ensuring efficient store inventory management.
+<br>
+<br>
+<img src= "media/screenshots/product-management-page1.png" alt="Product management page">
+<br>
+<img src= "media/screenshots/product-management-page2.png" alt="Product management page">
+
 
 
 
