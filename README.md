@@ -31,27 +31,26 @@ Live site [ITI Shop](https://iti-shop-15bc9a913a6f.herokuapp.com/).
 
 ### [Features](#features)
   - [Home Page](#home-page)
-  - [Random Products Section](#)
-  - [Newsletter Subscription Section](#)
+  - [Random Products Section](#random-products-gallery)
+  - [Newsletter Subscription Section](#newsletter-signup-form)
+  - [Navigation](#navigation)
   - [Footer](#footer)
-  - [FAQ Page](#)
-  - [Contact Page](#)
-  - [Privacy Policy](#)
-  - [Main Nav Menu](#)
-  - [Restricted Pages](#restricted-pages)
-  - [Product Filtration](#product-filtration)
-  - [Search Bar](#search-bar)
+  - [All Products Page](#all-products-page)
+  - [Product Detail Page](#product-detail-page)
+  - [Clothing Page](#clothing-page)
+  - [Accessories Page](#accessories-page)
   - [Sale Page](#sale-page)
-  - [Product Details Page](#product-details-page)
-  - [Wishlist Page](#wishlist-page)
-  - [My Account Dropdown](#my-account-dropdown)
-  - [User Sign Up Page](#user-sign-up-page)
-  - [User Sign In Page](#user-sign-in-page)
-  - [User Sign Out Page](#user-sign-out-page)
-  - [User Profile Page](#user-profile-page)
-  - [Shopping bag Page](#)
+  - [Contact Us Page](#contact-us-page)
+  - [FAQ Page](#faq-page)
+  - [Profile Page](#profile-page)
+  - [Shopping Bag](#shopping-bag)
   - [Checkout Page](#checkout-page)
-  - [Error 404 Page](#error-page)
+  - [Privacy Policy](#)
+  - [Sign Up Page](#sign-up-page)
+  - [Sign In Page](#sign-in)
+  - [Sign Out Page](#sign-out)
+  - [Product management Page](#product-management-page)
+  - [Error 404 Page](#error-404-page)
 
 ### [Future Features](#future-features)
 
@@ -285,6 +284,10 @@ The main navigation bar includes links to the homepage, a dropdown menu for all 
 <img src= "media/screenshots/main-nav.png" alt= "Main Nav">
 
 #### Footer
+
+The footer includes links to social media platforms, Contact US form, an FAQ section, and the Privacy Policy for easy access to important information and updates.
+<br>
+<br>
 <img src= "media/screenshots/footer.png" alt= "Footer">
 
 ### All Products Page
@@ -427,6 +430,10 @@ The product management page allows admin users (store owners) to add new product
 <img src= "media/screenshots/product-management-page1.png" alt="Product management page">
 <br>
 <img src= "media/screenshots/product-management-page2.png" alt="Product management page">
+
+### Error 404 Page
+
+<img src= "media/screenshots/404-page.png" alt="Error 404 Page">
 
 
 
