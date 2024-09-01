@@ -45,12 +45,12 @@ Live site [ITI Shop](https://iti-shop-15bc9a913a6f.herokuapp.com/).
   - [Profile Page](#profile-page)
   - [Shopping Bag](#shopping-bag)
   - [Checkout Page](#checkout-page)
-  - [Privacy Policy](#)
   - [Sign Up Page](#sign-up-page)
   - [Sign In Page](#sign-in)
   - [Sign Out Page](#sign-out)
   - [Product management Page](#product-management-page)
   - [Error 404 Page](#error-404-page)
+  - [Privacy Policy](#)
 
 ### [Future Features](#future-features)
 
