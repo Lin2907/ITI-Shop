@@ -52,22 +52,18 @@ Live site [ITI Shop](https://iti-shop-15bc9a913a6f.herokuapp.com/).
   - [Error 404 Page](#error-404-page)
   - [Privacy Policy](#)
 
-### [Future Features](#future-features)
+### [Futures left to implement](#features-left-to-implement)
 
 ### [Design](#design)
-- [Colour Scheme](#colour-scheme)
+- [Colour Scheme](#color-scheme)
 - [Typography](#typography)
-- [Images](#images)
 
 ### [Business Model](#business-model)
 
-### [Marketing Strategy](#marketing-strategy)
+## [Marketing](#marketing-1)
 - [Social Media Marketing](#social-media-marketing)
 - [Newsletter Marketing](#newsletter-marketing)
-- [Search Engine Optimization (SEO)](#search-engine-optimization-seo)
-  - [Keywords](#keywords)
-  - [SiteMap](#sitemap)
-  - [Robots](#robots)
+- [Search Engine Optimization (SEO)](#seo-search-engine-optimization)
 
 ### [Technologies](#technologies)
 - [Languages Used](#languages-used)
@@ -431,10 +427,90 @@ The product management page allows admin users (store owners) to add new product
 <br>
 <img src= "media/screenshots/product-management-page2.png" alt="Product management page">
 
+### Privacy Policy
+<img src = "media/screenshots/privacy-policy.png" alt ="Privacy Policy">
+
 ### Error 404 Page
 
 <img src= "media/screenshots/404-page.png" alt="Error 404 Page">
 
+
+## Features left to implement
+
+  * Social Media Sharing: The ability for visitors to share products on social media platforms, allowing them to easily show their preferences to friends and followers.
+
+  * Price Alert for Products: A feature that allows users to set alerts for product price changes, notifying them when their desired items reach a specific price.
+
+  * Recently Viewed Products: A feature that displays recently viewed products, helping users quickly revisit items they have previously explored.
+
+
+## Design
+
+### Color Scheme
+
+The website features a main black-and-white color scheme, with red details for alert buttons, sale link ,discounted prices, and some buttons, ensuring a modern and visually striking design.
+
+<img src = "media/screenshots/black.png" alt = "Black color used for design"><img src ="media/screenshots/white.png" alt="White color used for design">
+
+### Typography
+
+The typography on the website primarily uses the clean and modern Lato font, combined with few elements of Dancing Script cursive .
+
+### Bussines Model
+
+The business model chosen is B2C (Business to Customer),  directly selling stylish and affordable clothing and accessories to individual customers through its e-commerce platform.
+
+## Marketing
+
+### Social Media Marketing
+
+The shop's Facebook page is actively used for marketing purposes and includes a "Contact Us" option, which directs visitors to the contact form on the online store for inquiries or assistance.
+<br>
+<br>
+<img src= "media/screenshots/iti-shop-facebook.png" alt ="Facebook page screenshot">
+<br>
+<br>
+<img src= "media/screenshots/iti-shop-fb.png" alt="Facebook page screenshot">
+
+### Newsletter Marketing
+
+Newsletter sign up feature allows customers to stay updated on the latest products and offers, with a confirmation email sent upon subscription to ensure they’ve successfully signed up.
+
+### SEO (Search Engine Optimization)
+
+To achieve a website's visibility, increasing the likelihood of users discovering the site when searching for relevant terms that match the website’s content and keywords, the following actions were taken:
+
+  * Meta keywords and descriptions were implemented to improve search engine results, making the site more likely to appear when users search for puzzles.
+  * An XML sitemap was generated through [XML Sitemaps](https://www.xml-sitemaps.com/), highlighting the most important pages to boost visibility on search engines.
+  * A robots.txt file was created to specify which areas of the site should or should not be indexed by search engine crawlers, ensuring better control over the site’s visibility.
+
+## Technologies
+### Languages Used
+  * HTML5
+  * CSS3
+  * Javascript
+  * Python
+
+### Frameworks Used
+ * Django
+ * Bootstrap
+
+ ## Libraries and Installed Packages
+
+ * pytest – Framework for running automated tests.
+ * crispy-bootstrap4 – Bootstrap 4 template pack for django-crispy-forms.
+ * django-crispy-forms – Utilized to render dynamic, responsive forms across the project.
+ * dj-database-url – Enables use of the DATABASE_URL environment variable for database configuration.
+ * django-allauth – Provides authentication, registration, and account management features in Django.
+ * django-countries v7.2.1 – Adds country choices to forms and country fields for models in Django applications.
+ * gunicorn – A Python WSGI HTTP server for UNIX systems, used to serve Django applications.
+ * psycopg2 – Adapter for connecting to a PostgreSQL database from Python.
+ * boto3 v1.26.27 – AWS SDK for Python, used to interact with S3 storage.
+ * Black – A Python code formatter that ensures consistency across the codebase.
+ * django-storages – A collection of custom storage backends for Django, commonly used with AWS S3.
+ * stripe v7.8.1 – Python library for integrating Stripe’s API for payment processing.
+ * pillow - Used for image processing.
+ * django-taggit - Used to implement a tagging system
 
 
 
