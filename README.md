@@ -12,24 +12,24 @@ Live site [ITI Shop](https://iti-shop-15bc9a913a6f.herokuapp.com/).
 
 ## Table of Contents
 
-### [UX](#ux)
+[UX](#ux)
 - [The Strategy](#the-strategy)
 - [Targeted Users](#targeted-users)
 - [Site Goals](#site-goals)
 - [Project Goals](#project-goals)
 
 
- ## [Agile Development](#agile-development)
+ [Agile Development](#agile-development)
   - [Project Board](#project-board)
   - [User Stories](#user-stories)
 
 
 
-## [Wireframes](#wireframes-1)
+[Wireframes](#wireframes-1)
 
-### [Database Design](#database-design)
+[Database Design](#database-design)
 
-### [Features](#features)
+[Features](#features)
   - [Home Page](#home-page)
   - [Random Products Section](#random-products-gallery)
   - [Newsletter Subscription Section](#newsletter-signup-form)
@@ -52,33 +52,33 @@ Live site [ITI Shop](https://iti-shop-15bc9a913a6f.herokuapp.com/).
   - [Error 404 Page](#error-404-page)
   - [Privacy Policy](#)
 
-### [Futures left to implement](#features-left-to-implement)
+[Futures left to implement](#features-left-to-implement)
 
-### [Design](#design-1)
+[Design](#design)
 - [Colour Scheme](#color-scheme)
 - [Typography](#typography)
 
-### [Business Model](#bussines-model)
+[Business Model](#bussines-model)
 
-## [Marketing](#marketing-1)
+[Marketing](#marketing-1)
 - [Social Media Marketing](#social-media-marketing)
 - [Newsletter Marketing](#newsletter-marketing)
 - [Search Engine Optimization (SEO)](#seo-search-engine-optimization)
 
-## [Technologies](#technologies-1)
+[Technologies](#technologies-1)
 - [Languages Used](#languages-used)
 - [Frameworks Used](#frameworks-used)
 - [Libraries And Installed Packages](#libraries-and-installed-packages)
 - [Tools and Resources](#tools-and-resources)
 
-## [Testing](#testing-1)
+[Testing](#testing-1)
 
 
-## [Credits](#credits-1)
+[Credits](#credits-1)
 
-## [Deployment](#deployment-1)
+[Deployment](#deployment-1)
 
-## [Acknowledgements](#acknowledgements-1)
+[Acknowledgements](#acknowledgements-1)
 
 
 ## UX
