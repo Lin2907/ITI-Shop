@@ -54,31 +54,31 @@ Live site [ITI Shop](https://iti-shop-15bc9a913a6f.herokuapp.com/).
 
 ### [Futures left to implement](#features-left-to-implement)
 
-### [Design](#design)
+### [Design](#design-1)
 - [Colour Scheme](#color-scheme)
 - [Typography](#typography)
 
-### [Business Model](#business-model)
+### [Business Model](#bussines-model)
 
 ## [Marketing](#marketing-1)
 - [Social Media Marketing](#social-media-marketing)
 - [Newsletter Marketing](#newsletter-marketing)
 - [Search Engine Optimization (SEO)](#seo-search-engine-optimization)
 
-### [Technologies](#technologies)
+## [Technologies](#technologies-1)
 - [Languages Used](#languages-used)
 - [Frameworks Used](#frameworks-used)
 - [Libraries And Installed Packages](#libraries-and-installed-packages)
 - [Tools and Resources](#tools-and-resources)
 
-### [Testing](#testing)
-- [Bugs](#bugs)
+## [Testing](#testing-1)
 
-### [Credits](#credits)
 
-### [Deployment](#deployment)
+## [Credits](#credits-1)
 
-### [Acknowledgements](#acknowledgements)
+## [Deployment](#deployment-1)
+
+## [Acknowledgements](#acknowledgements-1)
 
 
 ## UX
@@ -497,21 +497,76 @@ To achieve a website's visibility, increasing the likelihood of users discoverin
 
  ## Libraries and Installed Packages
 
- * pytest – Framework for running automated tests.
- * crispy-bootstrap4 – Bootstrap 4 template pack for django-crispy-forms.
- * django-crispy-forms – Utilized to render dynamic, responsive forms across the project.
- * dj-database-url – Enables use of the DATABASE_URL environment variable for database configuration.
- * django-allauth – Provides authentication, registration, and account management features in Django.
- * django-countries v7.2.1 – Adds country choices to forms and country fields for models in Django applications.
- * gunicorn – A Python WSGI HTTP server for UNIX systems, used to serve Django applications.
- * psycopg2 – Adapter for connecting to a PostgreSQL database from Python.
- * boto3 v1.26.27 – AWS SDK for Python, used to interact with S3 storage.
- * Black – A Python code formatter that ensures consistency across the codebase.
- * django-storages – A collection of custom storage backends for Django, commonly used with AWS S3.
- * stripe v7.8.1 – Python library for integrating Stripe’s API for payment processing.
- * pillow - Used for image processing.
- * django-taggit - Used to implement a tagging system
+ * [pytest](https://docs.pytest.org/en/7.2.x/) – Framework for running automated tests.
+ * [crispy-bootstrap4](https://pypi.org/project/crispy-bootstrap4/) – Bootstrap 4 template pack for django-crispy-forms.
+ * [django-crispy-forms](https://pypi.org/project/django-crispy-forms/) – Utilized to render dynamic, responsive forms across the project.
+ * [dj-database-url](https://pypi.org/project/dj-database-url/) – Enables use of the DATABASE_URL environment variable for database configuration.
+ * [django-allauth](https://pypi.org/project/django-allauth/) – Provides authentication, registration, and account management features in Django.
+ * [django-countries v7.2.1](https://pypi.org/project/django-countries/7.2.1/) – Adds country choices to forms and country fields for models in Django applications.
+ * [gunicorn](https://gunicorn.org/) – A Python WSGI HTTP server for UNIX systems, used to serve Django applications.
+ * [psycopg2](https://pypi.org/project/psycopg2/) – Adapter for connecting to a PostgreSQL database from Python.
+ * [boto3 v1.34.145](https://pypi.org/project/boto3/) – AWS SDK for Python, used to interact with S3 storage.
+ * [black](https://pypi.org/project/black/) – A Python code formatter that ensures consistency across the codebase.
+ * [django-storages](https://django-storages.readthedocs.io/en/latest/) – A collection of custom storage backends for Django, commonly used with AWS S3.
+ * [stripe v7.8.1](https://pypi.org/project/stripe/) – Python library for integrating Stripe’s API for payment processing.
+ * [pillow](https://pypi.org/project/pillow/) - Used for image processing.
+ * [django-taggit](https://pypi.org/project/django-taggit/) - Used to implement a tagging system
 
 
+## Tools and Resources
+
+ * [GitPod](https://gitpod.io/workspaces) - used as the main IDE for the project.
+ * [GitHub](https://github.com/) - used for hosting the repository and project board.
+ * [Heroku](https://www.heroku.com/home) -  used for deployment.
+ * [Favicon.io](https://favicon.io/) used to create the favicon for the app.
+Techsini- used for creating the different screen views.
+ * [FontAwesome](https://fontawesome.com/) - used for all icons throughout the site.
+ * [Figma](https://www.figma.com/) - used for creating the wireframes.
+ * [Smart Draw](https://www.smartdraw.com/diagramming/) - used for creating ERD.
+ * [Code Institute Pep8 Linter](https://pep8ci.herokuapp.com/#) - used for reviewing all .py files during code validation tests.
+
+## Testing
+
+To view the testing section, please refer to the [TESTING.md](https://github.com/Lin2907/ITI-Shop/blob/main/Testing.md) file.
 
 
+## Credits
+
+* [Code Institute Walkthrough Project Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/250e2c2b8e43cccb56b4721cd8a8bd4de6686546), which was the base for creating ITI Shop.
+* [Stack Overflow](https://stackoverflow.com/) for bugs resolving.
+* [Pexels](https://www.pexels.com/) , [About You](https://en.aboutyou.de/your-shop) and [Amazon](https://www.amazon.de/) for images and product description.
+* [Chat Gpt](https://openai.com/index/gpt-4/) for generating most of the products description.
+* [Django official documentation](https://docs.djangoproject.com/en/5.1/) for everything Django related.
+* [Bootstrap official documentation](https://getbootstrap.com/docs/4.3/getting-started/introduction/) for styling throughout the site.
+
+## Deployment
+
+For this project the application was deployed to Heroku using the following steps:
+
+ * Log into Heroku account and navigate to the dashboard. Click on 'New' to create a new app. Set region to EU, click on 'Create app'.
+ * In the 'Settings' tab in 'Reveal Config Vars' add the environment variables for the Database, Secret Key, CollecStatic, Stripe Public Key, Stripe Private Key , Webhook Secret Key , Email Host User and Email Host PAssword.
+ * Navigate to the 'Deploy' tab and under 'Deployment Method' click on 'GitHub'.
+ * Locate the repository from GitHub, paste the link and click 'Connect'.
+ * Ensure that the selected branch is 'main branch' before clicking to Deploy.
+ * Once the build is finished there should be a message saying 'Your app was successfully deployed' with a 'View' button.
+
+### Forking the repository
+In order to fork the repository to make a copy the steps are:
+
+ * Log into GitHub and locate the repository for [ITI Shop](https://github.com/Lin2907/ITI-Shop) .
+* At the top of the repository above settings locate the 'Fork' button There is now a copy of the repository in the Github account.
+
+### Cloning the repository
+
+* On GitHub navigate to the main page of the repository.
+* Above the list of files click the dropdown code menu.
+* Select the https option and copy the link.
+* Open the GitPod Bash terminal.
+* Change the current working directory to the desired destination location
+* Type the git clone command with the copied URL.
+* Press enter to create the local clone
+
+## [Acknowledgements](#acknowledgements)
+
+Huge Thank you to all Code Institute stuff for giving me the opportunity to take part in this amazing journey.<br> 
+Also, a special thanks to my mentor Mitko for helping and supporting me througough this and all previous projects. His insightful advice and mentorship have played a crucial role in helping me succeed.
