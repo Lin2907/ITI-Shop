@@ -524,6 +524,7 @@ Techsini- used for creating the different screen views.
  * [Figma](https://www.figma.com/) - used for creating the wireframes.
  * [Smart Draw](https://www.smartdraw.com/diagramming/) - used for creating ERD.
  * [Code Institute Pep8 Linter](https://pep8ci.herokuapp.com/#) - used for reviewing all .py files during code validation tests.
+ * [Privacy Policy Generator](https://www.privacypolicygenerator.info/) - used for creating Provacy Policy for the application.
 
 ## Testing
 
