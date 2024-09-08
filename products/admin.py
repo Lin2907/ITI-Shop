@@ -1,29 +1,29 @@
 from django.contrib import admin
-from .models import Product, Category,Review
+from .models import Product, Category, Review
 from taggit.forms import TagWidget
+
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        'sku',
-        'name',
-        'category',
-        'price',
-        'rating',
-        'image',
-        
+        "sku",
+        "name",
+        "category",
+        "price",
+        "rating",
+        "image",
     )
 
-    ordering = ('sku',)
+    ordering = ("sku",)
 
     formfield_overrides = {
-        # Use the TagWidget to display tags as a text input with comma-separated values
-        'tags': {'widget': TagWidget},
+        "tags": {"widget": TagWidget},
     }
+
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
-        'name',
+        "friendly_name",
+        "name",
     )
 
 
