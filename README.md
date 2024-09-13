@@ -25,7 +25,7 @@ Live site [ITI Shop](https://iti-shop-15bc9a913a6f.herokuapp.com/).
 
 
 
-[Wireframes](#wireframes-1)
+[Wireframes](#wireframes)
 
 [Database Design](#database-design)
 
@@ -60,25 +60,25 @@ Live site [ITI Shop](https://iti-shop-15bc9a913a6f.herokuapp.com/).
 
 [Business Model](#bussines-model)
 
-[Marketing](#marketing-1)
+[Marketing](#marketing)
 - [Social Media Marketing](#social-media-marketing)
 - [Newsletter Marketing](#newsletter-marketing)
 - [Search Engine Optimization (SEO)](#seo-search-engine-optimization)
 
-[Technologies](#technologies-1)
+[Technologies](#technologies)
 - [Languages Used](#languages-used)
 - [Frameworks Used](#frameworks-used)
 - [Libraries And Installed Packages](#libraries-and-installed-packages)
 - [Tools and Resources](#tools-and-resources)
 
-[Testing](#testing-1)
+[Testing](#testing)
 
 
-[Credits](#credits-1)
+[Credits](#credits)
 
-[Deployment](#deployment-1)
+[Deployment](#deployment)
 
-[Acknowledgements](#acknowledgements-1)
+[Acknowledgements](#acknowledgements)
 
 
 ## UX
@@ -569,5 +569,4 @@ In order to fork the repository to make a copy the steps are:
 
 ## [Acknowledgements](#acknowledgements)
 
-Huge Thank you to all Code Institute stuff for giving me the opportunity to take part in this amazing journey.<br> 
-Also, a special thanks to my mentor Mitko for helping and supporting me througough this and all previous projects. His insightful advice and mentorship have played a crucial role in helping me succeed.
+Huge Thank you to all Code Institute stuff for giving me the opportunity to take part in this amazing journey. I am also very thankfull to my mentor Mitko Bachvarov for helping and supporting me throughout this and all previous projects. His insightful advice and mentorship have played a crucial role in helping me succeed.
