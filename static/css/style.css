@@ -343,6 +343,7 @@ input[name='q']::placeholder {
     }
 }
 
+
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
@@ -354,7 +355,7 @@ input[name='q']::placeholder {
     }
 
     p {
-        font-size: 90% !important;
+        font-size: 100% !important;
     }
 
     .nav-link {
@@ -426,10 +427,14 @@ input[name='q']::placeholder {
     #carouselExampleIndicators {
         height:300px !important;
     }
-    #carouselExampleIndicators .carousel-inner .carousel-item img {
-        margin-top: 10%  !important;
-        height: auto; /* Maintain aspect ratio */
+    #carouselExampleIndicators .carousel-inner {
+        height: auto;
       }
+
+    .carousel-inner img {
+        max-height: 300px;
+        max-width: 100%;
+        margin: auto;
     
       #product-container .card {
         flex: 0 1 100%;
@@ -453,7 +458,7 @@ input[name='q']::placeholder {
       }
 
       .container p {
-        font-size: 45% !important;
+        font-size: 100% !important;
         margin-top: 10px;
       }
 
@@ -463,3 +468,4 @@ input[name='q']::placeholder {
 
      
 }
+
