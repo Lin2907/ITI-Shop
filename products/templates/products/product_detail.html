@@ -156,8 +156,8 @@
             <div class="d-flex justify-content-center">
                 <div class="row justify-content-center">
                     {% for similar_product in similar_products %}
-                        <div class="{% if similar_products|length == 1 %}col-md-6 col-lg-4{% else %}col-md-4{% endif %} d-flex justify-content-center mb-4">
-                            <div class="card" style="width: 100%; margin :10px;">
+                        <div class="col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                            <div class="card" style="width: 100%; margin: 10px;">
                                 <img src="{{ similar_product.image.url }}" class="card-img-top" alt="{{ similar_product.name }}">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">{{ similar_product.name }}</h5>
@@ -172,6 +172,7 @@
         {% endif %}
     </div>
 </div>
+
 <!-- Product Reviews Section -->
 <hr class="border-2 mt-5">
 <div class="row justify-content-center align-items-center flex-column">

@@ -74,34 +74,34 @@
             </div>
         </div>
         </div>
-        <!--Wishlist section-->
-        <h5 style ="text-align: center; padding:5% ;">Wishlist</h5>
-{% if wishlist.products.all %}
-    <div class="row">
-        {% for product in wishlist.products.all %}
-        <div class="col-md-3" style="margin:auto;">
-            <div class="card">
-                <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
-                <div class="card-body">
-                    <h6 class="card-title">{{ product.name }}</h6>
-                    <p class="card-text">€{{ product.price }}</p>
-                    <a href="{% url 'product_detail' product.id %}" class="btn btn-primary" style="background-color:black; border: black;">View Product</a>
-                    <a href="{% url 'remove_from_wishlist' product.id %}" class="btn btn-danger">Remove</a>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-{% else %}
-<div style="text-align: center;">
-    <hr style= "border: 1px solid grey ; margin: 10px 0">
-    <h6>Your wishlist is empty</h6>
-    <hr style= "border: 1px solid grey ; margin: 10px 0">
-</div>
-{%endif%}
-{% endblock %}
-
-{% block postloadjs %}
-    {{ block.super }}
-    <script src="{% static 'profiles/js/countryfield.js' %}"></script>
-{% endblock %}
+ <!--Wishlist section-->
+ <h5 style ="text-align: center; padding:5%;">Wishlist</h5>
+ {% if wishlist.products.all %}
+     <div class="row" style="margin:2% !important;">
+         {% for product in wishlist.products.all %}
+         <div class="col-md-3" style="margin:auto;">
+             <div class="card">
+                 <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                 <div class="card-body">
+                     <h6 class="card-title">{{ product.name }}</h6>
+                     <p class="card-text">€{{ product.price }}</p>
+                     <a href="{% url 'product_detail' product.id %}" class="btn btn-primary" style="background-color:black; border: black;">View Product</a>
+                     <a href="{% url 'remove_from_wishlist' product.id %}" class="btn btn-danger">Remove</a>
+                 </div>
+             </div>
+         </div>
+         {% endfor %}
+     </div>
+ {% else %}
+ <div style="text-align: center;">
+     <hr style= "border: 1px solid grey ; margin: 10px 0">
+     <h6>Your wishlist is empty</h6>
+     <hr style= "border: 1px solid grey ; margin: 10px 0">
+ </div>
+ {%endif%}
+ {% endblock %}
+ 
+ {% block postloadjs %}
+     {{ block.super }}
+     <script src="{% static 'profiles/js/countryfield.js' %}"></script>
+ {% endblock %}
