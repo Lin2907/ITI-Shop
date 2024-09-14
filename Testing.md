@@ -1,9 +1,9 @@
 ## Testing
 
-Throughout the development of this project, extensive testing was carried out to ensure the website functions correctly. This section provides documentation on all tests performed.
+This section provides documentation on all tests performed.
 
 ### Code Validation
-I validated all code using the appropriate tools for each language.
+Validated all code using the appropriate tools for each language.
 
 #### HTML
 All HTML files were tested using the [W3C HTML Validator](https://validator.w3.org/) to ensure compliance with web standards.
