@@ -39,6 +39,7 @@ def remove_from_wishlist(request, product_id):
 def wishlist_view(request):
     wishlist, created = Wishlist.objects.get_or_create(user=request.user)
     products = wishlist.products.all()
+
     return render(
         request, "wishlist/wishlist.html",
         {"wishlist": wishlist, "products": products}
