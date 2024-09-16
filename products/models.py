@@ -37,6 +37,8 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
     materials = models.TextField(null=True, blank=True)
     tags = TaggableManager()
+    fit = models.CharField(max_length=254, null=True, blank=True)
+    care_instructions = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return self.name
