@@ -12,11 +12,13 @@ def add_to_wishlist(request, product_id):
     product = get_object_or_404(Product, id=product_id)
     wishlist, created = Wishlist.objects.get_or_create(user=request.user)
 
+
     if product in wishlist.products.all():
         messages.info(request, "This product is already in your wishlist.")
     else:
         wishlist.products.add(product)
         messages.success(request, "Product added to your wishlist.")
+
 
     return redirect("product_detail", product_id=product_id)
 
