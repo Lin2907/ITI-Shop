@@ -260,6 +260,7 @@ This feature allows users to sign up for the newsletter, receiving a confirmatio
 <img src= "media/screenshots/newsletter-success-page.png" alt= "Newsletter sucess page">
 
 #### Newsletter subscription Email
+Please note that the Email may land in spam or junk folder.
 <br>
 <img src= "media/screenshots/newsletter-mail-confirmation.png" alt= "All products page">
 <br>
@@ -305,7 +306,7 @@ Given a user is logged in as an admin (superuser), they have the option to edit 
 <br>
 
 ### Product Detail Page
-On the product detail page, users can view the product's image, name, price, rating, and detailed description. Logged-in users have the option to add the item to their wishlist, after which the wishlist button is disabled. A material toggle button reveals the product's materials if provided. The page also features a "Similar and Matching Products" section, showcasing the same products in different colors or related items. Additionally, there's an "Add Review" section where users can write reviews and rate the product. Logged-in users can edit or delete their own reviews for more control over their feedback.
+On the product detail page, users can view the product's image, name, price, rating, and detailed description. Logged-in users have the option to add the item to their wishlist, after which the wishlist button is disabled. A material toggle button reveals the product's materials if provided. It also includes additional product attributes, the fit and care instructions, providing users with additional information about the product's fit and maintenance. The page also features a "Similar and Matching Products" section, showcasing the same products in different colors or related items. Additionally, there's an "Add Review" section where users can write reviews and rate the product. Logged-in users can edit or delete their own reviews for more control over their feedback.
    <br>
    <br>
 <img src= "media/screenshots/product-detail-page.png" alt= "Product details page">
@@ -372,7 +373,11 @@ The profile page allows users to manage and update their delivery information to
 <br>
 <img src= "media/screenshots/profile-page.png" alt= "User Profile page">
 
-#### Wishlist Section
+### Wishlist Page
+
+The Wishlist page allows users to view all the products they've added, with options to either remove items or view product details for potential purchase. It provides a convenient way to manage and revisit favorite items.
+<br>
+<br>
 <img src= "media/screenshots/wishlist-section.png" alt= "Wishlist section">
 
 ### Shopping Bag

@@ -6,7 +6,12 @@ This section provides documentation on all tests performed.
 Validated all code using the appropriate tools for each language.
 
 #### HTML
+
 All HTML files were tested using the [W3C HTML Validator](https://validator.w3.org/) to ensure compliance with web standards.
+
+<details>
+  <summary>HTML Validation Results</summary>
+
 
 | Home Page           | ![Home page html validation](media/validation/home-page-validation.png)                     |
 | ------------------- | ------------------------------------------------------------------------------------------- |
@@ -20,9 +25,12 @@ All HTML files were tested using the [W3C HTML Validator](https://validator.w3.o
 | Faq Page            | ![FAQ page html validation](media/validation/faq-validation.png)                            |
 | Privacy Policy      | ![Privacy policy page html validation](media/validation/privacy-policy-validation.png)      |
 
+</details>
 
 #### CSS
 The recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/) is used to validate all of my CSS files.
+<details>
+  <summary>CSS Validation Results</summary>
 
 | File         | Screenshot                                                                         |
 | ------------ | ---------------------------------------------------------------------------------- |
@@ -30,8 +38,13 @@ The recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/) is 
 | profile.css  | ![Profile page css validation](media/validation/profile-page-css-validation.png)   |
 | checkout.css | ![Checkout page css validation](media/validation/checkout-css-validation.png) |
 
+</details>
+
 #### JavaScript
 Used the recommended [JShint Validator](https://jshint.com/) to validate the JS files.
+
+<details>
+  <summary>JavaScript Validation Results</summary>
 
 | File                  | Screenshot                                                                             |
 | --------------------- | -------------------------------------------------------------------------------------- |
@@ -42,8 +55,13 @@ Used the recommended [JShint Validator](https://jshint.com/) to validate the JS 
 | quantity_input_script | ![JavaScript quantity input validation](media/validation/quantity-input-script-js.png) |
 | stripe-elements-js    | ![JavaScript stripe elements validation](media/validation/stripe-elements-js.png)      |
 
+</details>
+
 #### Python
 [CI Python Linter](https://pep8ci.herokuapp.com/) is used for validating all the Python files.
+
+<details>
+  <summary>Python files Validation Results</summary>
 
 | Home Page                    | Screenshot                                                          |
 | ------------------------------ | ------------------------------------------------------------------- |
@@ -113,6 +131,7 @@ Used the recommended [JShint Validator](https://jshint.com/) to validate the JS 
 | views.py | ![Faq views validation](media/validation/faq-views-py.png) |
 | urls.py  | ![Faq urls validation](media/validation/faq-urls-py.png)   |
 
+</details>
 
 ## Manual Testing
 Full testing of the functionality of the site was done on the following devices:
@@ -138,8 +157,8 @@ Tested through Lighthouse in Dev Tools.
 | Sign Out        | ![Sign out page accessibility check](media/validation/log-out-accessibility.png)               |
 | Contact Us      | ![Contact us page accessibility check](media/validation/contact-us-accessibility.png)          |
 | Faq             | ![Faq page accessibility check](media/validation/faq-accessibility.png)                        |
-| Privacy Policy  | ![Privac policy page accessibility check](media/validation/privacy-policy-accessibility.png)   |
-| Shopping Bag    | ![Shopping bag page accessibility check](media/validation/fshopping-bag-accessibility.png)     |
+| Privacy Policy  | ![Privacy policy page accessibility check](media/validation/privacy-policy-accessibility.png)   |
+| Shopping Bag    | ![Shopping bag page accessibility check](media/validation/shopping-bag-accessibility.png)     |
 | Checkout        | ![Checkout page accessibility check](media/validation/checkout-accessibility.png)              |
 | Profile         | ![Profile page accessibility check](media/validation/profiles-accessibility.png)               |
 
