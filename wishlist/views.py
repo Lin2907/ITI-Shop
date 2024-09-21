@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import Wishlist
 from products.models import Product
+from profiles.models import UserProfile
 
 # Create your views here.
 
@@ -19,7 +20,7 @@ def add_to_wishlist(request, product_id):
         wishlist.products.add(product)
         messages.success(request, "Product added to your wishlist.")
 
-
+    
     return redirect("product_detail", product_id=product_id)
 
 
@@ -39,10 +40,15 @@ def remove_from_wishlist(request, product_id):
 
 @login_required
 def wishlist_view(request):
-    wishlist, created = Wishlist.objects.get_or_create(user=request.user)
-    products = wishlist.products.all()
+    if not request.user.is_authenticated:
+        messages.error(
+            request, "Please log in to add to your Wishlist."
+        )
+        return redirect(reverse("account_login"))
 
-    return render(
-        request, "wishlist/wishlist.html",
-        {"wishlist": wishlist, "products": products}
-    )
+    user = get_object_or_404(UserProfile, user=request.user)
+    wishlist, created = Wishlist.objects.get_or_create(user=user.user)
+
+    template_name = "wishlist/wishlist.html"
+    context = {"wishlist": wishlist}
+    return render(request, template_name, context)
