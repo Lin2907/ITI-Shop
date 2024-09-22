@@ -12,7 +12,7 @@
             <div class="card h-100 d-flex flex-column">
                 <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
                 <div class="card-body d-flex flex-column">
-                    <h6 class="card-title">{{ product.name }} - Added on {{ Wishlist.date_added}}</h6>
+                    <h6 class="card-title">{{ product.name }}</h6>
                     <p class="card-text">€{{ product.price }}</p>
                     <div class="mt-auto">
                         <a href="{% url 'product_detail' product.id %}" class="btn btn-primary" style="background-color:black; border: black;">View Product</a>
